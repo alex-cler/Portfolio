@@ -1,0 +1,29 @@
+@import url('clash-display.css');
+
+:root {
+    --dark-bg: #171717;
+    --light-text: hsl(56, 100%, 97%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--dark-bg);
+    color: var(--light-text);
+}
+
+h1 {
+    font-family: 'ClashDisplay-Medium';
+}
+
+header {
+    height: 100vh;
+}
