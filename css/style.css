@@ -1,5 +1,11 @@
 @import url('clash-display.css');
 
+@font-face {
+    font-family: 'Clash-Display';
+    src: url('./assets/fonts/ClashDisplay-Bold.ttf') format('truetype'),
+         url('./assets/fonts/ClashDisplay-Medium.ttf') format('truetype'),
+}
+
 :root {
     --dark-bg: #171717;
     --light-text: hsl(56, 100%, 97%);
@@ -21,7 +27,7 @@ body {
 }
 
 h1 {
-    font-family: 'ClashDisplay-Medium';
+    font-family: 'ClashDisplay';
 }
 
 header {
