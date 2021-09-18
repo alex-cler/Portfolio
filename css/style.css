@@ -20,11 +20,54 @@ body {
     color: var(--light-text);
 }
 
-h1 {
+header h1 {
     font-family: 'chillax', sans-serif;
     font-weight: 600;
+    font-size: clamp(1.5rem, 5vw, 10rem);  
+    text-align: center;
+}
+
+header span {
+    background: -webkit-linear-gradient(225deg, #0093E9 0%, #80D0C7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 header {
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.activity li {
+    list-style: none;
+    position: relative;
+}
+
+.activity a{
+    text-decoration: none;
+    color: var(--light-text);
+}
+
+section img {
+    width: 75vw;
+    height: 75vh;
+}
+
+figure {
+    margin: 1em;
+    position: relative;
+}
+
+figcaption h2 {
+    font-family:;
+    font-weight: 600;
+    font-size: 5em;
+    line-height: 1.5;
+    position: absolute;
+    bottom: 25%;
+    left: 25%;
+    color: var(--light-text);
+    transition: 0.5s;
 }
