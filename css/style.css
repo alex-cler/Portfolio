@@ -1,15 +1,26 @@
 @import url('chillax.css');
 
+/* Setting Variables */
 :root {
-    --dark-bg: #090938;
+    --dark-bg: #131313/* #090938 */;
+    --light-bg: #E9E9E9;
     --light-text: hsl(56, 100%, 97%);
 }
 
+/* Resetting CSS */
 * {
     padding: 0;
     margin: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
     box-sizing: border-box;
 }
+
+/* Custom cursor */
+
 
 html {
     scroll-behavior: smooth;
@@ -23,18 +34,23 @@ body {
 header h1 {
     font-family: 'chillax', sans-serif;
     font-weight: 600;
-    font-size: 8em;  
+    font-size: min(75vw, 1000px);
     text-align: center;
 }
 
 header span {
-    background: -webkit-linear-gradient(225deg, #0093E9 0%, #80D0C7 100%);
+    background: -webkit-linear-gradient(225deg, #df2462 0%, #2683cf 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-header {
+header,
+#intro,
+#projects {
     height: 100vh;
+}
+
+header {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,7 +58,6 @@ header {
 
 .activity li {
     list-style: none;
-    position: relative;
 }
 
 .activity a{
@@ -50,18 +65,43 @@ header {
     color: var(--light-text);
 }
 
+/* The 4 sections composing the navbar */
+.logo {
+    position: fixed;
+    top: 0.75em;
+    left: 0.75em;
+}
+
+.about {
+    position: fixed;
+    bottom: 0.75em;
+    left: 0.75em;
+}
+
+.projects {
+    position: fixed;
+    top: 0.75em;
+    right: 0.75em;
+}
+
+.contact {
+    position: fixed;
+    bottom: 0.75em;
+    right: 0.75em;
+}
+
 section img {
     width: 75vw;
     height: 75vh;
 }
 
-figure {
+section figure {
     margin: 1em;
     position: relative;
+    text-align: center;
 }
 
-figcaption h2 {
-    font-family:;
+section figcaption h2 {
     font-weight: 600;
     font-size: 5em;
     line-height: 1.5;
@@ -70,4 +110,10 @@ figcaption h2 {
     left: 25%;
     color: var(--light-text);
     transition: 0.5s;
+}
+
+#projects {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
 }
