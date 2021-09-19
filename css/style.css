@@ -1,7 +1,7 @@
 @import url('chillax.css');
 
 :root {
-    --dark-bg: #171717;
+    --dark-bg: #090938;
     --light-text: hsl(56, 100%, 97%);
 }
 
@@ -23,7 +23,7 @@ body {
 header h1 {
     font-family: 'chillax', sans-serif;
     font-weight: 600;
-    font-size: clamp(1.5rem, 5vw, 10rem);  
+    font-size: 8em;  
     text-align: center;
 }
 
