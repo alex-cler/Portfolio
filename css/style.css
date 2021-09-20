@@ -2,9 +2,32 @@
 
 /* Setting Variables */
 :root {
-    --dark-bg: #131313/* #090938 */;
-    --light-bg: #E9E9E9;
+    /* Colors */
+    --dark-mode: #131313/* #090938 */;
+    --light-mode: hsl(56, 100%, 97%);;
+    --dark-text: #131313;
     --light-text: hsl(56, 100%, 97%);
+    --red-gradient: #df2462;
+    --blue-gradient: #2683cf;
+
+    /* Fonts & Typographies */
+    --body-font:/* Clash display */;
+    --title-font:/* If an other font */;
+    --title-size: 15em;
+    --heading-font-size: 2.5rem;
+    --text-font-size: 1.75rem;
+    --navbar-font-size: 1.5rem;
+
+    /* Font weight */
+    --title-font-weight: 600;
+    --heading-font-weight: 500;
+    --text-font-weight: 400;
+
+    /* Margin and padding */
+
+    /* Z-index */
+    --z-fixed: 100;
+    --z-front: 10;
 }
 
 /* Resetting CSS */
@@ -20,36 +43,38 @@
 
 /* Custom cursor */
 
-
 html {
     scroll-behavior: smooth;
+    /* I use 62.5% to set 1rem to 10px */
+    font-size: 62.5%;
 }
 
 body {
-    background-color: var(--dark-bg);
+    background-color: var(--dark-mode);
     color: var(--light-text);
 }
 
 header h1 {
     font-family: 'chillax', sans-serif;
-    font-size: clamp(3.5rem, 50vw , 12rem);
+    font-size: clamp(2rem, 1rem + 10vw, 16rem);
     text-align: center;
 }
 
 header span {
-    background: -webkit-linear-gradient(225deg, #df2462 0%, #2683cf 100%);
+    background: -webkit-linear-gradient(225deg, var(--red-gradient) 0%, var(--blue-gradient) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 header,
-#intro,
-#projects {
+#intro
+/* #projects */ {
     height: 100vh;
 }
 
 header {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -68,29 +93,58 @@ header {
     position: fixed;
     top: 0.75em;
     left: 0.75em;
+    z-index: var(--z-fixed);
 }
 
 .about {
     position: fixed;
     bottom: 0.75em;
     left: 0.75em;
+    z-index: var(--z-fixed);
 }
 
 .projects {
     position: fixed;
     top: 0.75em;
     right: 0.75em;
+    z-index: var(--z-fixed);
 }
 
 .contact {
     position: fixed;
     bottom: 0.75em;
     right: 0.75em;
+    z-index: var(--z-fixed);
+}
+
+#intro {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+article h2 {
+    font-size: clamp(3.5rem, 12vw + 1rem, 5rem);
+}
+
+article p{
+    font-size: clamp(1rem, 10vw + 0.5rem, 2rem);
+    min-width: 40vw;
+    max-width: 800px;
+    margin-top: 1.75em;
 }
 
 section img {
     width: 75vw;
     height: 75vh;
+}
+
+#projects figure img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 section figure {
@@ -112,6 +166,5 @@ section figcaption h2 {
 
 #projects {
     display: flex;
-    flex-direction: row;
-    overflow: hidden;
+    flex-direction: column;
 }

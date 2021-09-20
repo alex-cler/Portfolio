@@ -13,7 +13,11 @@
 
 <body>
     <header>
-        <h1>Welcome to my <span>Portfolio</span> !</h1>
+        <h1>Welcome to my <span>Portfolio</span></h1>
+        <div class="scroll">
+            <h3>Scroll Down</h3>
+            <img src="" alt="Arrow indicating to scroll down">
+        </div>
         <nav>
             <div class="activity">
                 <ul>
@@ -22,6 +26,7 @@
                     </li>
                     <li class="about">
                         <a href="#">About</a>
+                        <span class="change-theme"></span>
                     </li>
                     <li class="projects">
                         <a href="#">Projects</a>
@@ -34,13 +39,12 @@
         </nav>
     </header>
     <main id="intro">
-        <div>
-            <h1>Who am I ?</h1>
-            <span></span>
+        <article>
+            <h2>Who am I ?</h2>
             <p>Hello, my name is Alex, i’m 21 years old and i’m at my first school year at HETIC. I’m actually looking
             for an internship for October 2021. I do really like UX/UI Design, FrontEnd languages, editing on PhotoShop
             or making illustration/logo on Illustrator. I’m currently learning the React.js framework.</p>
-        </div>
+        </article>
         <img src="./assets/images/Alex_Picture.png" alt="Picture of my lovely face">
     </main>
     <section id="projects">
@@ -54,6 +58,12 @@
             <img src="./assets/images/Marvel-projet.jpg" alt="Marvel background with all heroes">
             <figcaption>
                 <h2>Rodin Museum</h2>
+            </figcaption>
+        </figure>
+        <figure class="photo">
+            <img src="./assets/images/Marvel-projet.jpg" alt="Marvel background with all heroes">
+            <figcaption>
+                <h2>Matthieu Photographe</h2>
             </figcaption>
         </figure>
     </section>
