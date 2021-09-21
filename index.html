@@ -16,7 +16,14 @@
         <h1>Welcome to my <span>Portfolio</span></h1>
         <div class="scroll">
             <h3>Scroll Down</h3>
-            <img src="" alt="Arrow indicating to scroll down">
+            <!-- SVG Arrow down -->
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="arrow-down">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+            </a>
         </div>
         <nav>
             <div class="activity">
@@ -25,14 +32,33 @@
                         <a href="#"><img src="" alt="Personnal Logo"></a>
                     </li>
                     <li class="about">
-                        <a href="#">About</a>
-                        <span class="change-theme"></span>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-code" viewBox="0 0 16 16">
+                                <path d="M5.854 4.854a.5.5 0 1 0-.708-.708l-3.5 3.5a.5.5 0 0 0 0 .708l3.5 3.5a.5.5 0 0 0 .708-.708L2.707 8l3.147-3.146zm4.292 0a.5.5 0 0 1 .708-.708l3.5 3.5a.5.5 0 0 1 0 .708l-3.5 3.5a.5.5 0 0 1-.708-.708L13.293 8l-3.147-3.146z"/>
+                            </svg>
+                        </a>
+                        <h4>About</h4>
+                        <span class="change-theme">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                <circle cx="8" cy="8" r="8"/>
+                            </svg>
+                        </span>
                     </li>
                     <li class="projects">
-                        <a href="#">Projects</a>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="logo-project" viewBox="0 0 16 16">
+                                <path d="M0 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V2zm8.5 0v8H15V2H8.5zm0 9v3H15v-3H8.5zm-1-9H1v3h6.5V2zM1 14h6.5V6H1v8z"/>
+                            </svg>
+                        </a>
+                        <h4>Projects</h4>
                     </li>
                     <li class="contact">
-                        <a href="#">Contact</a>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-chat-right" viewBox="0 0 16 16">
+                                <path d="M2 1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h9.586a2 2 0 0 1 1.414.586l2 2V2a1 1 0 0 0-1-1H2zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12z"/>
+                            </svg>
+                        </a>
+                        <h4>Contact</h4>
                     </li>
                 </ul>
             </div>
@@ -42,8 +68,9 @@
         <article>
             <h2>Who am I ?</h2>
             <p>Hello, my name is Alex, i’m 21 years old and i’m at my first school year at HETIC. I’m actually looking
-            for an internship for October 2021. I do really like UX/UI Design, FrontEnd languages, editing on PhotoShop
-            or making illustration/logo on Illustrator. I’m currently learning the React.js framework.</p>
+            for an internship for October 2021. I do really like UX/UI Design, FrontEnd languages, editing on
+            PhotoShop or making illustration/logo on Illustrator.<br>
+            I’m currently learning the React.js framework.</p>
         </article>
         <img src="./assets/images/Alex_Picture.png" alt="Picture of my lovely face">
     </main>
@@ -68,10 +95,10 @@
         </figure>
     </section>
     <div class="social">
-        <li><a href="#"><img src="" alt="Instagram"></a></li>
-        <li><a href="#"><img src="" alt="Linkedin"></a></li>
-        <li><a href="#"><img src="" alt="Github"></a></li>
-        <li><a href="#"><img src="" alt="Balance"></a></li>
+        <li><a class="instagram" href="https://www.instagram.com/alexandre_cler/">Instagram</a></li>
+        <li><a class="linkedin" href="https://www.linkedin.com/in/alexandre-cler/">Linkedin</a></li>
+        <li><a class="github" href="https://github.com/alex-cler">Github</a></li>
+        <li><a class="behance" href="https://www.behance.net/alexandrecler">Behance</a></li>
     </div>
 </body>
 

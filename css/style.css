@@ -9,6 +9,10 @@
     --light-text: hsl(56, 100%, 97%);
     --red-gradient: #df2462;
     --blue-gradient: #2683cf;
+    --color-instagram: radial-gradient(circle at 20% 100%, #feda75 0%, #fa7e1e 25%, #d62976 70%,#962fbf 85%,#4f5bd5 100%);
+    --color-linkedin: hsl(199, 85%, 36%);
+    --color-github: hsl(0, 5%, 9%);
+    --color-behance: hsl(226, 100%, 51%);
 
     /* Fonts & Typographies */
     --body-font:/* Clash display */;
@@ -79,8 +83,54 @@ header {
     align-items: center;
 }
 
+header h3 {
+    letter-spacing: 0.25em;
+    font-size: 1.125em;
+    font-weight: 400;
+}
+
+.scroll {
+    text-align: center;
+    margin-top: 5em;
+}
+
+.arrow-down {
+    animation: move 2.5s infinite;
+    color: var(--light-text);
+}
+
+/* Arrow-down moving up and down animation */
+@-webkit-keyframes move {
+    0%{
+        transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(25px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+@keyframes move {
+    0%{
+        transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(25px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+}
+
 .activity li {
     list-style: none;
+    font-size: 1.5rem;
 }
 
 .activity a{
@@ -88,39 +138,54 @@ header {
     color: var(--light-text);
 }
 
+.activity h4 {
+    font-size: 1.125em;
+    font-weight: 400;
+}
+
 /* The 4 sections composing the navbar */
+
+.about,
+.projects,
+.contact {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
 .logo {
     position: fixed;
-    top: 0.75em;
-    left: 0.75em;
+    top: 1em;
+    left: 1em;
     z-index: var(--z-fixed);
 }
 
 .about {
     position: fixed;
-    bottom: 0.75em;
-    left: 0.75em;
+    bottom: 1em;
+    left: 1em;
     z-index: var(--z-fixed);
 }
 
 .projects {
     position: fixed;
-    top: 0.75em;
-    right: 0.75em;
+    top: 1em;
+    right: 1em;
     z-index: var(--z-fixed);
 }
 
 .contact {
     position: fixed;
-    bottom: 0.75em;
-    right: 0.75em;
+    bottom: 1em;
+    right: 1em;
     z-index: var(--z-fixed);
 }
 
+/* Display of the intro */
 #intro {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     justify-content: space-around;
     align-items: center;
 }
@@ -167,4 +232,41 @@ section figcaption h2 {
 #projects {
     display: flex;
     flex-direction: column;
+}
+
+.social {
+    text-align: center;
+}
+
+.social li {
+    display: inline;
+    list-style: none;
+    font-size: 2.25em;
+    font-weight: 500;
+    margin: 1.5em;
+}
+
+.social a {
+    color: var(--light-text);
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.instagram:hover {
+    background-image: var(--color-instagram);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.linkedin:hover {
+    color: var(--color-linkedin);
+}
+
+.github:hover {
+    color: var(--color-github);
+    -webkit-text-stroke: var(--light-text) 0.25px;
+}
+
+.behance:hover {
+    color: var(--color-behance);
 }
