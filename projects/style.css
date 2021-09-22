@@ -1,0 +1,7 @@
+:root {
+    --dark-mode: #131313/* #090938 */;
+    --light-mode: hsl(56, 100%, 97%);;
+    --dark-text: #131313;
+    --light-text: hsl(56, 100%, 97%);
+}
+
