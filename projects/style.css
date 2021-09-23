@@ -1,7 +1,59 @@
+/* Setting Variables */
 :root {
+    /* Colors */
     --dark-mode: #131313/* #090938 */;
     --light-mode: hsl(56, 100%, 97%);;
     --dark-text: #131313;
     --light-text: hsl(56, 100%, 97%);
+    --text-opacity: hsl(56, 100%, 97%, 0.4);
+    --red-gradient: #df2462;
+    --blue-gradient: #2683cf;
+    --color-instagram: radial-gradient(circle at 20% 100%, #feda75 0%, #fa7e1e 25%, #d62976 70%,#962fbf 85%,#4f5bd5 100%);
+    --color-linkedin: hsl(199, 85%, 36%);
+    --color-github: hsl(0, 5%, 9%);
+    --color-behance: hsl(226, 100%, 51%);
+
+    /* Fonts & Typographies */
+    --body-font:'Clash Display', sans-serif;
+    --title-font:/* If an other font */;
+    --title-size: 15em;
+    --heading-font-size: 2.5rem;
+    --text-font-size: 1.75rem;
+    --navbar-font-size: 1.5rem;
+
+    /* Font weight */
+    --title-font-weight: 600;
+    --heading-font-weight: 500;
+    --text-font-weight: 400;
+
+    /* Margin and padding */
+
+    /* Z-index */
+    --z-fixed: 100;
+    --z-front: 10;
 }
 
+/* Resetting CSS */
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+    box-sizing: border-box;
+}
+
+/* Custom cursor */
+
+html {
+    scroll-behavior: smooth;
+    /* I use 62.5% to set 1rem to 10px */
+    font-size: 62.5%;
+    font-family: var(--body-font);
+}
+
+body {
+    background-color: var(--dark-mode);
+    color: var(--light-text);
+}

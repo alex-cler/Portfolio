@@ -18,7 +18,7 @@
     --title-font:/* If an other font */;
     --title-size: 15em;
     --heading-font-size: 2.5rem;
-    --text-font-size: 1.75rem;
+    --text-font-size: 1.5rem;
     --navbar-font-size: 1.5rem;
 
     /* Font weight */
@@ -177,8 +177,10 @@ header h3 {
     right: 1.25em;
     z-index: var(--z-fixed);
 }
+/* ------------------------- */
 
-/* Display of the intro */
+
+/* -- Display of the intro --*/
 #intro {
     display: inline;
 }
@@ -187,12 +189,14 @@ header h3 {
     float: right;
 }
 
-.description h2 {
+.description h2,
+#projects h2:not(figcaption h2) {
     font-size: clamp(6rem, 12vw + 1rem, 8rem);
     font-weight: 300;
     text-align: left;
     margin: 0 auto;
     width: 90vw;
+    border-bottom: solid 0.5px var(--light-mode);
 }
 
 .description p{
@@ -204,17 +208,18 @@ header h3 {
     width: 90vw;
     padding: 1.5em 0;
     line-height: 1.5em;
-    border-top: solid 0.5px var(--light-mode);
-    border-bottom: solid 0.5px var(--light-mode);
 }
 
 .description span {
     color: var(--light-mode);
 }
 
-section img {
-    width: 75vw;
-    height: 75vh;
+/* ----- Projects part ----- */
+section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 section figure {
@@ -225,26 +230,35 @@ section figure {
 
 section figcaption h2 {
     font-weight: 600;
-    font-size: 5em;
-    line-height: 1.5;
-    position: absolute;
-    bottom: 25%;
-    left: 25%;
+    font-size: 10rem;
     color: var(--light-text);
+    margin: 0 auto;
+    position: absolute;
+    bottom: 40%;
+    left: 25%;
     transition: 0.5s;
 }
 
-#projects {
-    display: flex;
-    flex-direction: column;
+/* section img {
+    width: 25vw;
+    height: 450px;
+} */
+
+section img {
+    height: 75vh;
+    width: 75vw;
+    -webkit-filter: brightness(85%);
+    filter: brightness(85%);
 }
 
-#projects img {
-    -webkit-filter: brightness(75%);
-    filter: brightness(75%);
-    width: 30vw;
-    height: 500px;
-    
+section figure p {
+    font-size: var(--text-font-size);
+    width: 25vw;
+}
+
+#info-project {
+    /* border: 1rem solid red; */
+    margin: 5em 7.5em;
 }
 
 .social {
