@@ -10,6 +10,7 @@
     <link href="https://api.fontshare.com/css?f[]=clash-display@200,300,400,500,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <title>Portfolio</title>
+    <script src="https://unpkg.com/feather-icons"></script>
 </head>
 
 <body>
@@ -19,11 +20,7 @@
             <h3>Scroll Down</h3>
             <!-- SVG Arrow down -->
             <a href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    class="arrow-down">
-                    <polyline points="6 9 12 15 18 9"></polyline>
-                </svg>
+                <i class="arrow-down" data-feather="chevrons-down" width="40" height="40" stroke-width="0.5"></i>
             </a>
         </div>
         <nav>
@@ -33,38 +30,24 @@
                         <a href="#"><img src="" alt="Personnal Logo"></a>
                     </li> -->
                     <li class="about">
-                        <a href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                                class="bi bi-code" viewBox="0 0 16 16">
-                                <path
-                                    d="M5.854 4.854a.5.5 0 1 0-.708-.708l-3.5 3.5a.5.5 0 0 0 0 .708l3.5 3.5a.5.5 0 0 0 .708-.708L2.707 8l3.147-3.146zm4.292 0a.5.5 0 0 1 .708-.708l3.5 3.5a.5.5 0 0 1 0 .708l-3.5 3.5a.5.5 0 0 1-.708-.708L13.293 8l-3.147-3.146z" />
-                            </svg>
+                        <a href="about/about.html">
+                            <!-- Icon -->
+                            <i class="more-horizontal" data-feather="more-horizontal" width="32" height="32" stroke-width="0.5"></i>
                         </a>
                         <h4>About</h4>
-                        <!-- <span class="change-theme">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                                class="bi bi-circle-fill" viewBox="0 0 16 16">
-                                <circle cx="8" cy="8" r="8" />
-                            </svg>
-                        </span> -->
                     </li>
                     <li class="projects">
                         <a href="projects/projects.html">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                                class="logo-project" viewBox="0 0 16 16">
-                                <path
-                                    d="M0 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V2zm8.5 0v8H15V2H8.5zm0 9v3H15v-3H8.5zm-1-9H1v3h6.5V2zM1 14h6.5V6H1v8z" />
-                            </svg>
+                            <!-- Icon -->
+                            <i class="menu" data-feather="menu" width="32" height="32" stroke-width="0.5"></i>
+                            <i data-feather="layers" width="32" height="32" stroke-width="0.5"></i>
                         </a>
                         <h4>Projects</h4>
                     </li>
                     <li class="contact">
                         <a href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                                class="bi bi-chat-right" viewBox="0 0 16 16">
-                                <path
-                                    d="M2 1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h9.586a2 2 0 0 1 1.414.586l2 2V2a1 1 0 0 0-1-1H2zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12z" />
-                            </svg>
+                            <!-- Icon -->
+                            <i class="message" data-feather="message-circle" width="32" height="32" stroke-width="0.5"></i>
                         </a>
                         <h4>Contact</h4>
                     </li>
@@ -72,15 +55,18 @@
             </div>
         </nav>
     </header>
-    <main id="intro">
+    <main>
         <div class="description">
             <h2>Who am I ?</h2>
             <p>Hello, my name is <span>Alex</span>. I’m 21 years old and currently in the second year of my bachelor’s
-            degree in IT. I’m looking for an <span>internship</span> at a company that focuses on <span>web design</span>. 
-            I’ve been studying UX/UI Design and FrontEnd at HETIC for the last year, and now I feel ready to take on a 
-            <span>challenge</span> in this field of work with a <span>company</span> that offers opportunities for 
-            <span>professional growth</span>. I like <span>drawing</span>, <span>programming</span> but most of all I 
-            like <span>innovating</span>.
+                degree in IT. I’m looking for an <span>internship</span> at a company that focuses on <span>web
+                    design</span>.
+                I’ve been studying UX/UI Design and FrontEnd at HETIC for the last year, and now I feel ready to take on
+                a
+                <span>challenge</span> in this field of work with a <span>company</span> that offers opportunities for
+                <span>professional growth</span>. I like <span>drawing</span>, <span>programming</span> but most of all
+                I
+                like <span>innovating</span>.
             </p>
         </div>
         <!-- <img src="./assets/images/Alex_Picture.png" alt="Picture of my lovely face"> -->
@@ -94,8 +80,14 @@
                     <h2>Marvel</h2>
                 </figcaption>
             </figure>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi commodi consequatur consequuntur veritatis.</p>
-            <a href="#">Learn more</a>
+            <div class="description-project">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi commodi consequatur consequuntur
+                veritatis.</p>
+                <div class="more">
+                    <a href="#">Learn more</a>
+                    <i class="arrow" data-feather="arrow-right" width="24" height="24" stroke-width="0.5"></i>
+                </div>
+            </div>
         </div>
         <div class="rodin" id="info-project">
             <figure>
@@ -104,8 +96,14 @@
                     <h2>Rodin Museum</h2>
                 </figcaption>
             </figure>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi commodi consequatur consequuntur veritatis.</p>
-            <a href="#">Learn more</a>
+            <div class="description-project">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi commodi consequatur consequuntur
+                veritatis.</p>
+                <div class="more">
+                    <a href="#">Learn more</a>
+                    <i class="arrow" data-feather="arrow-right" width="24" height="24" stroke-width="0.5"></i>
+                </div>
+            </div>
         </div>
         <div class="photo" id="info-project">
             <figure>
@@ -114,8 +112,14 @@
                     <h2>Photography</h2>
                 </figcaption>
             </figure>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi commodi consequatur consequuntur veritatis.</p>
-            <a href="#">Learn more</a>
+            <div class="description-project">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi commodi consequatur consequuntur
+                veritatis.</p>
+                <div class="more">
+                    <a href="#">Learn more</a>
+                    <i class="arrow" data-feather="arrow-right" width="24" height="24" stroke-width="0.5"></i>
+                </div>
+            </div>
         </div>
         <div class="nft" id="info-project">
             <figure>
@@ -124,16 +128,29 @@
                     <h2>Pixel NFT's</h2>
                 </figcaption>
             </figure>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi commodi consequatur consequuntur veritatis.</p>
-            <a href="#">Learn more</a>
+            <div class="description-project">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi commodi consequatur consequuntur
+                veritatis.</p>
+                <div class="more">
+                    <a href="#">Learn more</a>
+                    <i class="arrow" data-feather="arrow-right" width="24" height="24" stroke-width="0.5"></i>
+                </div>
+            </div>
         </div>
     </section>
-    <div class="social">
-        <li><a class="instagram" href="https://www.instagram.com/alexandre_cler/">Instagram</a></li>
-        <li><a class="linkedin" href="https://www.linkedin.com/in/alexandre-cler/">Linkedin</a></li>
-        <li><a class="github" href="https://github.com/alex-cler">Github</a></li>
-        <li><a class="behance" href="https://www.behance.net/alexandrecler">Behance</a></li>
-    </div>
+    
+    <footer>
+        <div class="social">
+            <li><a class="instagram" href="https://www.instagram.com/alexandre_cler/">Instagram</a></li>
+            <li><a class="linkedin" href="https://www.linkedin.com/in/alexandre-cler/">Linkedin</a></li>
+            <li><a class="github" href="https://github.com/alex-cler">Github</a></li>
+            <li><a class="behance" href="https://www.behance.net/alexandrecler">Behance</a></li>
+        </div>
+        <p>Created by myself 🤍 in 2021 ©</p>
+    </footer>
+    <script>
+        feather.replace()
+      </script>
 </body>
 
 </html>

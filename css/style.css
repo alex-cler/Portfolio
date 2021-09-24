@@ -2,7 +2,7 @@
 :root {
     /* Colors */
     --dark-mode: #131313/* #090938 */;
-    --light-mode: hsl(56, 100%, 97%);;
+    --light-mode: hsl(56, 100%, 97%);
     --dark-text: #131313;
     --light-text: hsl(56, 100%, 97%);
     --text-opacity: hsl(56, 100%, 97%, 0.4);
@@ -79,9 +79,9 @@ header {
 }
 
 header h3 {
-    letter-spacing: 0.25em;
-    font-size: 1.125em;
-    font-weight: 400;
+    letter-spacing: 0.1em;
+    font-size: 1.25em;
+    font-weight: 200;
 }
 
 .scroll {
@@ -135,7 +135,7 @@ header h3 {
 
 .activity h4 {
     font-size: 1em;
-    font-weight: 400;
+    font-weight: 200;
     letter-spacing: 0.075em;
     padding-top: 0.5em;
 }
@@ -148,6 +148,11 @@ header h3 {
     display: flex;
     flex-direction: column;
     text-align: center;
+}
+
+/* Only displaying on Phone device */
+.menu {
+    display: none;
 }
 
 .logo {
@@ -177,15 +182,20 @@ header h3 {
     right: 1.25em;
     z-index: var(--z-fixed);
 }
+
+.message {
+    transform: scaleX(-1);
+}
+
 /* ------------------------- */
 
 
 /* -- Display of the intro --*/
-#intro {
+main {
     display: inline;
 }
 
-#intro img {
+main img {
     float: right;
 }
 
@@ -196,7 +206,7 @@ header h3 {
     text-align: left;
     margin: 0 auto;
     width: 90vw;
-    border-bottom: solid 0.5px var(--light-mode);
+    border-bottom: solid 0.5px var(--light-text);
 }
 
 .description p{
@@ -211,7 +221,7 @@ header h3 {
 }
 
 .description span {
-    color: var(--light-mode);
+    color: var(--light-text);
 }
 
 /* ----- Projects part ----- */
@@ -223,20 +233,21 @@ section {
 }
 
 section figure {
-    margin: 1em;
     position: relative;
-    text-align: center;
 }
 
 section figcaption h2 {
+    width: fit-content;
     font-weight: 600;
-    font-size: 10rem;
+    font-size: 12rem;
     color: var(--light-text);
-    margin: 0 auto;
     position: absolute;
-    bottom: 40%;
-    left: 25%;
+    text-align: center;
+    bottom: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     transition: 0.5s;
+    z-index: var(--z-front);
 }
 
 /* section img {
@@ -247,6 +258,7 @@ section figcaption h2 {
 section img {
     height: 75vh;
     width: 75vw;
+    position: relative;
     -webkit-filter: brightness(85%);
     filter: brightness(85%);
 }
@@ -259,10 +271,33 @@ section figure p {
 #info-project {
     /* border: 1rem solid red; */
     margin: 5em 7.5em;
+    width: 75vw;
 }
 
-.social {
+.description-project {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    border-bottom: solid var(--light-text) 0.5px;
+    padding: 2em 0;
+}
+
+.description-project a {
+    text-decoration: none;
+    color: var(--light-text);
+}
+
+/* ------ Footer ------- */
+
+footer {
+    margin: 5rem;
     text-align: center;
+}
+
+footer p {
+    font-size: 1.25rem;
+    margin-top: 2.5em;
 }
 
 .social li {
@@ -297,3 +332,5 @@ section figure p {
 .behance:hover {
     color: var(--color-behance);
 }
+
+/* ---------------------- */
