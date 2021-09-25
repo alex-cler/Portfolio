@@ -349,7 +349,7 @@ footer p {
     transition: 0.5s;
 }
 
-h1 {
+.container h1 {
     position: absolute;
     font-family: 'Clash Display', sans-serif;
     font-weight: 300;
@@ -410,3 +410,23 @@ h1 {
 
 /* -------------------- */
 
+header {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header .animation-text {
+    width: 80%;
+    height: 70px;
+    position: relative;
+    overflow: hidden;
+}
+
+.wrapper .animation-text span {
+    position: absolute;
+    font-size: 2rem;
+    line-height: 4.2rem;
+}

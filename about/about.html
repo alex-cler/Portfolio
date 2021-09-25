@@ -7,9 +7,10 @@
     <meta description="My name is Alex, I've worked on many projects since I started in web design and computer science, 
     all of them are available here in my portfolio. Check them out and see what I can do for you.">
     <link href="https://api.fontshare.com/css?f[]=clash-display@200,300,400,500,600,700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
     <title>Portfolio</title>
     <script src="https://unpkg.com/feather-icons"></script>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav>
@@ -44,18 +45,40 @@
         </div>
     </nav>
     <main>
-        <div class="description">
-            <p>Hello, my name is <span>Alex</span>. I’m 21 years old and currently in the second year of my bachelor’s
-            degree in IT. I’m looking for an <span>internship</span> at a company that focuses on <span>web design</span>.
-            I’ve been studying UX/UI Design and FrontEnd at HETIC for the last year, and now I feel ready to take on a
-            <span>challenge</span> in this field of work with a <span>company</span> that offers opportunities for 
-            <span>professional growth</span>. I like <span>drawing</span>, <span>programming</span> but most of all I
-            like <span>innovating</span>.
-            </p>    
+        <div class="wrapper">
+            <div class="line">
+                <span>Hello, my name is Alex. I’m 21 years old and currently in the second year of my bachelor’s</span>
+            </div>
+            <div class="line">
+                <span> degree in IT. I’m looking for an internship at a company that focuses on web design.</span>
+            </div>
+            <div class="line">
+                <span>I’ve been studying UX/UI Design and FrontEnd at HETIC for the last year, and now I feel</span>
+            </div>
+            <div class="line">
+                <span>ready to take on a challenge in this field of work with a company that offers opportunities</span>
+            </div>
+            <div class="line">
+                <span>for professional growth. I like drawing, programming but most of all I like innovating.</span>
+            </div>
         </div>
     </main>
     <script>
         feather.replace()
+    </script>
+    <script>
+        /* Line animation */
+        const textrev = gsap.timeline();
+
+        textrev.from(".line span", 1.8, {
+            y: 200,
+            ease: "power4.out",
+            delay: 0.5,
+            skewY: 10,
+            stagger: {
+                amount: 0.5,
+            },
+        });
     </script>
 </body>
 </html>
