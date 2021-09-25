@@ -56,7 +56,6 @@ html {
 body {
     background-color: var(--dark-mode);
     color: var(--light-text);
-    /* overflow: hidden; */
 }
 
 header h1 {
@@ -87,7 +86,9 @@ header h3 {
 
 .scroll {
     text-align: center;
-    margin-top: 5em;
+    position: absolute;
+    bottom: 75px;
+    z-index: var(--z-front);
 }
 
 .arrow-down {
@@ -155,6 +156,8 @@ header h3 {
 .menu {
     display: none;
 }
+/* ------------------------------- */
+
 
 .logo {
     position: fixed;
@@ -337,18 +340,19 @@ footer p {
 /* ---------------------- */
 
 
-/* Project Page */
+/* --- Project Page --- */
 .block {
     position: relative;
     width: 580px;
     height: 460px;
     margin: 10px 300px 20px 80px;
+    transition: 0.5s;
 }
 
 h1 {
     position: absolute;
     font-family: 'Clash Display', sans-serif;
-    font-weight: lighter;
+    font-weight: 300;
     font-size: 64px;
 }
 
@@ -393,3 +397,16 @@ h1 {
 .block-4 h1 {
     right: -60px;
 }
+
+/* --- Hover effect --- */
+
+.block-1:hover,
+.block-2:hover,
+.block-3:hover,
+.block-4:hover,
+.block-5:hover {
+    transform: scale(1.2);
+}
+
+/* -------------------- */
+
