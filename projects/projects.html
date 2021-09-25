@@ -6,9 +6,41 @@
         <title>Portfolio</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link href="https://api.fontshare.com/css?f[]=clash-display@200,300,400,500,600,700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="../projects/style.css" />
+        <link rel="stylesheet" href="../css/style.css" />
+        <script src="https://unpkg.com/feather-icons"></script>
     </head>
     <body>
+        <nav>
+            <div class="activity">
+                <ul>
+                    <li class="logo">
+                        <a href="../index.html"><i class="ac" data-feather="at-sign" width="32" height="32" stroke-width="0.5"></i></a>
+                    </li>
+                    <li class="about">
+                        <a href="../about/about.html">
+                            <!-- Icon -->
+                            <i class="more-horizontal" data-feather="more-horizontal" width="32" height="32" stroke-width="0.5"></i>
+                        </a>
+                        <h4>About</h4>
+                    </li>
+                    <li class="projects">
+                        <a href="projects.html">
+                            <!-- Icon -->
+                            <i class="menu" data-feather="menu" width="32" height="32" stroke-width="0.5"></i>
+                            <i data-feather="layers" width="32" height="32" stroke-width="0.5"></i>
+                        </a>
+                        <h4>Projects</h4>
+                    </li>
+                    <li class="contact">
+                        <a href="#">
+                            <!-- Icon -->
+                            <i class="message" data-feather="message-circle" width="32" height="32" stroke-width="0.5"></i>
+                        </a>
+                        <h4>Contact</h4>
+                    </li>
+                </ul>
+            </div>
+        </nav>
         <div class="container">
             <div class="block block-1">
                 <h1>asterisks.</h1>
@@ -26,7 +58,7 @@
                 <h1>mouthwash.</h1>
             </div>
         </div>
-        <script src="../index.js"></script>
+        <script src="./index.js"></script>
         <script>
             var blocks = document.getElementsByClassName("block");
             var container = document.getElementsByClassName("container");
@@ -36,6 +68,9 @@
                 isAnimated: true,
                 springEffect: 0.8,
             });
+        </script>
+        <script>
+            feather.replace()
         </script>
     </body>
 </html>
