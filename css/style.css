@@ -40,6 +40,9 @@
     box-sizing: border-box;
 }
 
+a {
+    color: var(--light-mode);
+}
 /* Custom cursor */
 
 html {
@@ -364,11 +367,11 @@ section figure p {
 
 .circle:hover {
     border: solid var(--dark-mode) 0.5px;
-    background-color: var(--light-mode);
+    box-shadow: inset 0 0 0 25em var(--light-mode)
 }
 
 .circle:hover h2,
-.circle:hover #contact a {
+.circle:hover a {
     color: var(--dark-mode);
 }
 
