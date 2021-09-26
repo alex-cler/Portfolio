@@ -8,10 +8,6 @@
     --text-opacity: hsl(56, 100%, 97%, 0.4);
     --red-gradient: #df2462;
     --blue-gradient: #2683cf;
-    --color-instagram: radial-gradient(circle at 20% 100%, #feda75 0%, #fa7e1e 25%, #d62976 70%,#962fbf 85%,#4f5bd5 100%);
-    --color-linkedin: hsl(199, 85%, 36%);
-    --color-github: hsl(0, 5%, 9%);
-    --color-behance: hsl(226, 100%, 51%);
 
     /* Fonts & Typographies */
     --body-font:'Clash Display', sans-serif;
@@ -58,12 +54,14 @@ body {
     color: var(--light-text);
 }
 
+/* Welcome to my Portfolio */
 header h1 {
     font-size: clamp(2rem, 1rem + 10vw, 16rem);
     font-weight: 500;
     text-align: center;
 }
 
+/* Portfolio gradient */
 header span {
     background: -webkit-linear-gradient(225deg, var(--red-gradient) 0%, var(--blue-gradient) 100%);
     -webkit-background-clip: text;
@@ -78,6 +76,7 @@ header {
     align-items: center;
 }
 
+/* Scroll text */
 header h3 {
     letter-spacing: 0.1em;
     font-size: 1.25em;
@@ -135,15 +134,14 @@ header h3 {
     color: var(--light-text);
 }
 
+/* --- Display Navtext + Logo --- */
 .activity h4 {
-    font-size: 1em;
     font-weight: 200;
     letter-spacing: 0.075em;
     padding-top: 0.5em;
 }
 
 /* The 4 sections composing the navbar */
-
 .about,
 .projects,
 .contact {
@@ -156,9 +154,8 @@ header h3 {
 .menu {
     display: none;
 }
-/* ------------------------------- */
 
-
+/* --- Position Logo --- */
 .logo {
     position: fixed;
     top: 1.25em;
@@ -166,6 +163,7 @@ header h3 {
     z-index: var(--z-fixed);
 }
 
+/* --- Position About --- */
 .about {
     position: fixed;
     bottom: 1.25em;
@@ -173,6 +171,7 @@ header h3 {
     z-index: var(--z-fixed);
 }
 
+/* --- Position Projects --- */
 .projects {
     position: fixed;
     top: 1.25em;
@@ -180,11 +179,17 @@ header h3 {
     z-index: var(--z-fixed);
 }
 
+/* --- Position Contact --- */
 .contact {
     position: fixed;
     bottom: 1.25em;
     right: 1.25em;
     z-index: var(--z-fixed);
+}
+
+.message:hover,
+.more-horizontal:hover {
+    fill: var(--light-text);
 }
 
 .message {
@@ -203,6 +208,7 @@ main img {
     float: right;
 }
 
+/* --- Subtitle --- */
 .description h2,
 #projects h2:not(figcaption h2) {
     font-size: clamp(6rem, 12vw + 1rem, 8rem);
@@ -213,6 +219,7 @@ main img {
     border-bottom: solid 0.5px var(--light-text);
 }
 
+/* --- Introduction WHO I AM ? --- */
 .description p{
     font-size: clamp(4rem, 10vw + 0.5rem, 6rem);
     font-weight: 500;
@@ -240,6 +247,7 @@ section figure {
     position: relative;
 }
 
+/* --- Title Project --- */ /* Responsive */
 section figcaption h2 {
     width: fit-content;
     font-weight: 600;
@@ -254,11 +262,7 @@ section figcaption h2 {
     z-index: var(--z-front);
 }
 
-/* section img {
-    width: 25vw;
-    height: 450px;
-} */
-
+/* --- Image Project --- */
 section img {
     height: 75vh;
     width: 75vw;
@@ -278,6 +282,7 @@ section figure p {
     width: 75vw;
 }
 
+/* Description project text */
 .description-project {
     display: flex;
     flex-flow: row wrap;
@@ -288,19 +293,18 @@ section figure p {
     padding: 2em 0;
 }
 
-.description-project a {
-    text-decoration: none;
-    color: var(--light-text);
-}
-
+/* Learn More button */
 .more {
     background-color: var(--light-mode);
     padding: 0.5em 1.75em;
     border: solid var(--light-mode) 0.5px;
+    cursor: pointer;
     transition: 0.5s;
 }
 
+/* Text Learn More Button */
 .more a {
+    text-decoration: none;
     z-index: var(--z-front);
     color: var(--dark-mode);
     transition: 0.5s;
@@ -336,28 +340,13 @@ footer p {
 }
 
 .social a {
-    color: var(--light-text);
+    color: var(--text-opacity);
     transition: 0.5s;
     text-decoration: none;
 }
 
-.instagram:hover {
-    background-image: var(--color-instagram);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.linkedin:hover {
-    color: var(--color-linkedin);
-}
-
-.github:hover {
-    color: var(--color-github);
-    -webkit-text-stroke: var(--light-text) 0.25px;
-}
-
-.behance:hover {
-    color: var(--color-behance);
+.social a:hover {
+    color: var(--light-text);
 }
 
 /* ---------------------- */
@@ -374,82 +363,61 @@ footer p {
 
 .container h1 {
     position: absolute;
-    font-family: 'Clash Display', sans-serif;
+    font-family: var(--body-font);
     font-weight: 300;
     font-size: 64px;
 }
 
-.block-1 {
-    background: url("../assets/images/img-one.jpeg") no-repeat 50% 50%;
+/* --- Project images --- */
+.project-1 {
+    background: url("../assets/images/Marvel.jpg") no-repeat 50% 50%;
     background-size: cover;
 }
 
-.block-2 {
-    background: url("../assets/images/img-two.jpeg") no-repeat 50% 50%;
+.project-2 {
+    background: url("../assets/images/Rodin.jpg") no-repeat 50% 50%;
     background-size: cover;
 }
 
-.block-3 {
-    background: url("../assets/images/img-three.jpeg") no-repeat 50% 50%;
+.project-3 {
+    background: url("../assets/images/Matthieu.jpg") no-repeat 50% 50%;
     background-size: cover;
 }
 
-.block-4 {
-    background: url("../assets/images/img-four.jpeg") no-repeat 50% 50%;
+.project-4 {
+    background: url("../assets/images/NFT.jpg") no-repeat 50% 50%;
     background-size: cover;
 }
 
-.block-5 {
+.project-5 {
     background: url("../assets/images/img-five.jpeg") no-repeat 50% 50%;
     background-size: cover;
 }
 
+/* --- Display project gallery--- */
 .container {
-    margin-top: 200px;
+    margin-top: 150px;/* Clamp */
     margin-left: 200px;
 }
 
-.block-1 h1,
-.block-3 h1,
-.block-5 h1 {
+/* --- Display of project's text--- */
+.project-1 h1,
+.project-3 h1,
+.project-5 h1 {
     bottom: 0;
     right: -60px;
 }
 
-.block-2 h1,
-.block-4 h1 {
+.project-2 h1,
+.project-4 h1 {
     right: -60px;
 }
 
 /* --- Hover effect --- */
-
-.block-1:hover,
-.block-2:hover,
-.block-3:hover,
-.block-4:hover,
-.block-5:hover {
+.project-1:hover,
+.project-2:hover,
+.project-3:hover,
+.project-4:hover,
+.project-5:hover {
     transform: scale(1.2);
-}
-
-/* -------------------- */
-
-header {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-header .animation-text {
-    width: 80%;
-    height: 70px;
-    position: relative;
-    overflow: hidden;
-}
-
-.wrapper .animation-text span {
-    position: absolute;
-    font-size: 2rem;
-    line-height: 4.2rem;
 }
