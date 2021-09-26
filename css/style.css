@@ -333,6 +333,45 @@ section figure p {
     color: var(--light-mode);
 }
 
+/* --- Contact --- */
+.circle {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    margin: 5em auto;
+    width: 500px;
+    height: 500px;
+    border: solid var(--light-mode) 0.5px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    font-weight: 200;
+    text-align: center;
+    z-index: var(--z-front);
+}
+
+#contact a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 3em;
+    font-weight: 600;
+    z-index: var(--z-front);
+}
+
+.circle:hover {
+    border: solid var(--dark-mode) 0.5px;
+    background-color: var(--light-mode);
+}
+
+.circle:hover h2,
+.circle:hover #contact a {
+    color: var(--dark-mode);
+}
+
 /* ------ Footer ------- */
 
 footer {
