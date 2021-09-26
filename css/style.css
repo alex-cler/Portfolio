@@ -263,12 +263,26 @@ section figcaption h2 {
 }
 
 /* --- Image Project --- */
-section img {
+figure {
     height: 75vh;
     width: 75vw;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+section img {
+    width: 100%;
     position: relative;
     -webkit-filter: brightness(85%);
     filter: brightness(85%);
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+section img:hover {
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 section figure p {
