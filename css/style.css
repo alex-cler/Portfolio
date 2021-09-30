@@ -478,18 +478,36 @@ footer p {
     transform: scale(1.2);
 }
 
-/* Marvel Page */
-#marvel {
-    background: url("../assets/images/Marvel2.svg") no-repeat 100% 100%;
+/* Description Project */
+#marvel,
+#rodin,
+#photo,
+#nft {
     height: 100vh;
     width: 100vw;
-    background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-#marvel p {
+#marvel {
+    background: url("../assets/images/Marvel2.svg") no-repeat 100% 100%;
+    background-attachment: fixed;
+}
+
+#rodin {
+    background: url("../assets/images/Rodin-museum.jpg") no-repeat 100% 100%;
+    background-attachment: fixed;
+}
+
+#photo {
+    background: url("../assets/images/Matthieu.jpg") no-repeat 100% 100%;
+    background-attachment: fixed;
+}
+
+#marvel p,
+#rodin p,
+#photo p {
     font-size: 2.5em;
     font-weight: 300;
 }
@@ -497,12 +515,11 @@ footer p {
 aside {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
-    margin: 0 auto;
+    justify-content: space-between;
 }
 
 aside div {
-    padding: 7.5em;
+    width: fit-content;
 }
 
 aside h2 {
@@ -524,4 +541,33 @@ aside li {
 
 .categories li {
     list-style: none;
+}
+
+.purpose,
+.process,
+.question,
+aside {
+    width: 80vw;
+    margin: 7.5em auto;
+}
+
+.purpose p,
+.process p{
+    font-size: 2rem;
+    font-weight: 300;
+    margin-top: 1.5em;
+    line-height: 1.75em;
+}
+
+.purpose h2,
+.process h2 {
+    width: fit-content;
+    font-size: 4.5rem;
+    font-weight: 500;
+    border-bottom: solid var(--light-text) 2px;
+}
+
+.question {
+    font-size: 4rem;
+    text-align: center;
 }

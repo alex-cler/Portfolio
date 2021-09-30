@@ -1,23 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://api.fontshare.com/css?f[]=clash-display@200,300,400,500,600,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Portfolio</title>
     <script src="https://unpkg.com/feather-icons"></script>
 </head>
+
 <body>
-    <header>
+    <header id="rodin">
         <h1>Rodin Museum</h1>
-        <p>UX/UI Design/Landing page</p>
+        <p>UX/UI Design / Landing Page</p>
+        <nav>
+            <div class="activity">
+                <ul>
+                    <!-- <li class="logo">
+                        <a href="#"><img src="" alt="Personnal Logo"></a>
+                    </li> -->
+                    <li class="about">
+                        <a href="../about/about.html">
+                            <!-- Icon -->
+                            <i class="more-horizontal" data-feather="more-horizontal" width="32" height="32"
+                                stroke-width="0.5"></i>
+                        </a>
+                        <h4>About</h4>
+                    </li>
+                    <li class="projects">
+                        <a href="../projects/projects.html">
+                            <!-- Icon -->
+                            <i class="menu" data-feather="menu" width="32" height="32" stroke-width="0.5"></i>
+                            <i class="layers" data-feather="layers" width="32" height="32" stroke-width="0.5"></i>
+                        </a>
+                        <h4>Projects</h4>
+                    </li>
+                    <li class="contact">
+                        <a href="#contact">
+                            <!-- Icon -->
+                            <i class="message" data-feather="message-circle" width="32" height="32"
+                                stroke-width="0.5"></i>
+                        </a>
+                        <h4>Contact</h4>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
     <main>
-        <div class="categorie">
-            <h2></h2>
+        <aside>
+            <div class="years">
+                <h2>Year</h2>
+                <p>February 2021</p>
+            </div>
+            <div class="sector">
+                <h2>Sector</h2>
+                <p>Culture</p>
+            </div>
+            <div class="timeline">
+                <h2>Timeline</h2>
+                <p>2 weeks</p>
+            </div>
+            <div class="categories">
+                <h2>Categories</h2>
+                <ul>
+                    <li>UX Design</li>
+                    <li>UI Design</li>
+                    <li>Illustration</li>
+                </ul>
+            </div>
+        </aside>
+        <div class="purpose">
+            <h2>Purpose/Objective</h2>
+            <p>Making a topic understandable and documented through data representations, as part of an interactive,
+                immersive and impactful user experience!</p>
+        </div>
+        <div class="process">
+            <h2>The Design Process</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto enim cum ipsum provident suscipit
+            impedit ex, a facilis sequi nesciunt dolores, rerum facere commodi illo cupiditate ea explicabo, nostrum
+            atque placeat numquam? Nobis iusto autem maiores facilis obcaecati numquam culpa doloremque laboriosam
+            veniam nisi ex, ad cumque tenetur quisquam recusandae vero quaerat molestias quam officiis cum quia
+            inventore libero.</p>
+        </div>
+        <div class="question">
+            <h2>Want me to solve your problem and create your website ?</h2>
         </div>
     </main>
+    <script>
+        feather.replace()
+    </script>
 </body>
+
 </html>
