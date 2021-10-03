@@ -165,6 +165,7 @@ export default class Sketch{
             })
         })
     }
+
     setupSettings(){
         this.settings = {
             progress: 0
@@ -202,12 +203,6 @@ export default class Sketch{
             i.mesh.material.uniforms.uTextureSize.value.x = bounds.width;
             i.mesh.material.uniforms.uTextureSize.value.y = bounds.height;
         })
-
-
-
-
-
-
     }
 
     setupResize(){
@@ -250,8 +245,6 @@ export default class Sketch{
 
             m.uniforms.uTexture.value = texture;
 
-            
-
             // img.addEventListener('mouseout',()=>{
             //     this.tl = gsap.timeline()
             //     .to(m.uniforms.uCorners.value,{
@@ -284,9 +277,6 @@ export default class Sketch{
                 left: bounds.left,
             }
         })
-
-
-
     }
 
     setPosition(){
