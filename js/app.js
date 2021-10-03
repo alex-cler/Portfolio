@@ -36,7 +36,8 @@ export default class Sketch{
         this.asscroll = new ASScroll({
             disableRaf: true
         });
-
+        
+        /* Enable Horizontal scroll for every document without the "b-inside" class */
         this.asscroll.enable({
             horizontalScroll: !document.body.classList.contains('b-inside')
         })

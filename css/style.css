@@ -415,6 +415,7 @@ footer p {
     height: 460px;
     margin: 10px 300px 20px 80px;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 .container h1 {
@@ -467,15 +468,6 @@ footer p {
 .project-2 h1,
 .project-4 h1 {
     right: -60px;
-}
-
-/* --- Hover effect --- */
-.project-1:hover,
-.project-2:hover,
-.project-3:hover,
-.project-4:hover,
-.project-5:hover {
-    transform: scale(1.2);
 }
 
 /* Description Project */
