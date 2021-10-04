@@ -234,7 +234,7 @@ export default class Sketch{
         // this.scene.add( this.mesh );
         this.mesh.position.x = 300
 
-        this.images = [...document.querySelectorAll('.js-image')];
+        this.images = [...document.querySelectorAll('.block')];
         
         this.imageStore = this.images.map(img=>{
             let bounds = img.getBoundingClientRect();
