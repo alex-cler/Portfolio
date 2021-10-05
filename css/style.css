@@ -217,7 +217,7 @@ main img {
     font-size: clamp(3rem, 5vw + 1rem, 8rem);
     font-weight: 300;
     text-align: left;
-    margin: 0 auto;
+    margin: 0.5em auto; 
     width: 90vw;
     border-bottom: solid 0.5px var(--light-text);
 }
