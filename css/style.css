@@ -145,6 +145,137 @@ header h3 {
     padding-top: 0.5em;
 }
 
+/* Mobile burger menu settings and animations */
+.menu {
+    padding: 10px;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.menu__container {
+    width: 36px;
+    height: 24px;
+    position: relative;
+    overflow: hidden;
+}
+
+.menu:hover .menu__inner {
+    transform: translate(-50px, 50%);
+    opacity: 0;
+}
+
+.menu:hover .menu__inner::before, .menu:hover .menu__inner::after {
+    transform: translate(102px, 0);
+    opacity: 0;
+}
+
+/* The X appear when we click on it */
+.menu.is-active .menu__inner {
+    display: none;
+}
+
+.menu__inner {
+    width: 100%;
+    height: 0.75px;
+    background-color: var(--light-text);
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform, opacity;
+    transition-timing-function: ease;
+    transition-duration: 0.4s;
+    top: 50%;
+    transform: translate(5px, -50%);
+    opacity: 1;
+}
+
+.menu__inner::before, .menu__inner::after {
+    width: 100%;
+    height: 0.5px;
+    background-color: #fff;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform, opacity;
+    transition-timing-function: ease;
+    transition-duration: 0.4s;
+    content: "";
+    opacity: 1;
+    transform: translate(-5px, 0);
+}
+
+.menu__inner::before {
+    top: -10px;
+}
+
+.menu__inner::after {
+    top: 10px;
+}
+
+.menu:hover .menu__hidden {
+    opacity: 1;
+    transform: translate(0, -50%);
+}
+
+/* Top and buttom line reaching the same width than the middle one on hover */
+.menu:hover .menu__hidden::before, .menu:hover .menu__hidden::after {
+    opacity: 1;
+    transform: translate(-12px, 0);
+}
+
+.menu.is-active .menu__hidden {
+    opacity: 1;
+    transform: rotate(45deg) translate(-10px);
+}
+
+.menu.is-active .menu__hidden::before {
+    transform: translate(0, 10px) rotate(90deg);
+    transform-origin: center;
+}
+
+.menu.is-active .menu__hidden::after {
+    transform-origin: center;
+    transform: translate(10px, 10px) rotate(90deg);
+}
+
+.menu__hidden {
+    opacity: 0;
+    width: 100%;
+    height: 0.75px;
+    background-color: var(--light-text);
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform, opacity;
+    transition-timing-function: ease;
+    transition-duration: 0.4s;
+    background-color: var(--red-gradient);
+    top: 50%;
+    transform: translate(50px, -50%);
+}
+
+.menu__hidden::before, .menu__hidden::after {
+    width: 100%;
+    height: 0.75px;
+    background-color: var(--light-text);
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform, opacity;
+    transition-timing-function: ease;
+    transition-duration: 0.4s;
+    background-color: var(--red-gradient);
+    content: "";
+    transform: translate(102px, 0);
+}
+
+.menu__hidden::before {
+    top: -10px;
+}
+
+.menu__hidden::after {
+    top: 10px;
+}
+  
+
 /* The 4 sections composing the navbar */
 .about,
 .projects,
@@ -223,20 +354,26 @@ main img {
     border-bottom: solid 0.5px var(--light-text);
 }
 
+.description {
+    width: 90vw;
+    margin: 0 auto;
+    padding: 10em 0;
+}
+
 /* --- Introduction WHO I AM ? --- */
 .description p{
     font-size: clamp(2rem, 4vw + 1rem, 5rem);
     font-weight: 500;
     color: var(--text-opacity);
     text-align: left;
-    margin: 0 auto;
-    width: 90vw;
+    width: 65vw;
     padding: 1.5em 0;
-    line-height: 1.5em;
+    line-height: 1.75em;
 }
 
 .description span {
     color: var(--light-text);
+    z-index: var(--z-fixed);
 }
 
 /* ----- Projects part ----- */
@@ -278,8 +415,9 @@ figure {
 
 section img {
     height: 100vh;
-    width: 100vw;
-    background-repeat: repeat;
+    /* Problem to fix: center image; */
+    width: 100%;
+    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     -webkit-filter: brightness(85%);
@@ -323,7 +461,7 @@ section figure p {
     cursor: pointer;
     transition: 0.5s;
     font-family: var(--body-font);
-    padding: 0.75em 2em;
+    padding: 0.75em 3em;
 }
 
 /* Text Learn More Button */
@@ -337,7 +475,7 @@ section figure p {
 
 .more:hover,
 .more:focus {
-  box-shadow: inset 12em 0 0 0 var(--dark-mode);
+  box-shadow: inset 15em 0 0 0 var(--dark-mode);
 }
 
 .more:hover a {
@@ -584,6 +722,10 @@ aside {
 
     .menu {
         display: inline;
+    }
+
+    .description p {
+        width: 80vw;
     }
 
     footer {

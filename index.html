@@ -41,7 +41,15 @@
                         <h4>About</h4>
                     </li>
                     <li class="projects">
-                        <i class="menu" data-feather="menu" width="32" height="32" stroke-width="0.5"></i>
+                        <!-- Burger menu -->
+                        <div class="menu">
+                            <div class="menu__container">
+                                <!-- Middle line -->
+                                <div class="menu__inner"></div>
+                                <div class="menu__hidden"></div>
+                            </div>
+                        </div>
+                        <!-- <i class="menu" data-feather="menu" width="32" height="32" stroke-width="0.5"></i> -->
                         <a href="projects/projects.html">
                             <!-- Icon -->
                             <i class="layers" data-feather="layers" width="32" height="32" stroke-width="0.5"></i>
@@ -152,7 +160,7 @@
     <script>
         feather.replace()
     </script>
-    
+    <script src="./js/app.js"></script>
     <script>
     $(document).ready(function(){
       // Add smooth scrolling to all links

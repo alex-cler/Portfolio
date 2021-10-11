@@ -1,9 +1,13 @@
-import * as THREE from 'three';
+document.querySelector('.menu').addEventListener('click', (e) => {
+    e.currentTarget.classList.toggle('is-active');
+})
+
+/* import * as THREE from 'three';
 import ASScroll from '@ashthornton/asscroll'
 import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls.js';
 import fragment from './shaders/fragment.glsl'
 import vertex from './shaders/vertex.glsl'
-// import testTexture from '../img/texture.jpg';
+import testTexture from '../img/texture.jpg'
 import * as dat from 'dat.gui'
 import gsap from 'gsap'
 import barba from '@barba/core';
@@ -37,7 +41,6 @@ export default class Sketch{
             disableRaf: true
         });
         
-        /* Enable Horizontal scroll for every document without the "b-inside" class */
         this.asscroll.enable({
             horizontalScroll: !document.body.classList.contains('b-inside')
         })
@@ -304,5 +307,5 @@ export default class Sketch{
 
 new Sketch({
     domElement: document.getElementById('container')
-});
+}); */
 
