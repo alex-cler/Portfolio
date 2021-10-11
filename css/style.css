@@ -277,19 +277,22 @@ figure {
 }
 
 section img {
-    width: 100%;
-    /* position: relative; */
+    height: 100vh;
+    width: 100vw;
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
     -webkit-filter: brightness(85%);
     filter: brightness(85%);
     transition: 0.5s;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
-section img:hover {
+/* section img:hover {
     -ms-transform: scale(1.05);
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
-}
+} */
 
 section figure p {
     font-size: var(--text-font-size);
@@ -598,6 +601,27 @@ aside {
 
     #contact a {
         font-size: 3.5rem;
+    }
+
+    figure {
+        margin-bottom: 2.5em;
+    }
+
+    /* Remove any space bugs */
+    .description-project {
+        padding: 0;
+    }
+    
+    .more {
+        /* Space around the buttons */
+        margin: 2.5em auto;
+        /* Take all the space */
+        width: 100%;
+    }
+
+    .more:hover,
+    .more:focus {
+        box-shadow: inset 30em 0 0 0 var(--dark-mode);
     }
 }
 
