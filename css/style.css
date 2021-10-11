@@ -67,6 +67,7 @@ header h1 {
 /* Portfolio gradient */
 header span {
     background: -webkit-linear-gradient(225deg, var(--red-gradient) 0%, var(--blue-gradient) 100%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -239,6 +240,10 @@ main img {
 }
 
 /* ----- Projects part ----- */
+#projects {
+    position: relative;
+}
+
 section {
     display: flex;
     flex-flow: row wrap;
@@ -246,19 +251,16 @@ section {
     margin: 0 auto;
 }
 
-section figure {
-    position: relative;
-}
-
 /* --- Title Project --- */ /* Responsive */
 section figcaption h2 {
     width: fit-content;
     font-weight: 600;
-    font-size: 12rem;
+    /* Responsive font */
+    font-size: clamp(2.5rem, 1rem + 7vw, 20rem);
     color: var(--light-text);
     position: absolute;
-    text-align: center;
-    bottom: 30%;
+    /* centered the text on the image */
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     transition: 0.5s;
@@ -267,6 +269,7 @@ section figcaption h2 {
 
 /* --- Image Project --- */
 figure {
+    position: relative;
     height: 75vh;
     width: 75vw;
     overflow: hidden;
@@ -275,7 +278,7 @@ figure {
 
 section img {
     width: 100%;
-    position: relative;
+    /* position: relative; */
     -webkit-filter: brightness(85%);
     filter: brightness(85%);
     transition: 0.5s;
@@ -313,14 +316,16 @@ section figure p {
 /* Learn More button */
 .more {
     background-color: var(--light-mode);
-    padding: 0.5em 1.75em;
     border: solid var(--light-mode) 0.5px;
     cursor: pointer;
     transition: 0.5s;
+    font-family: var(--body-font);
+    padding: 0.75em 2em;
 }
 
 /* Text Learn More Button */
 .more a {
+    font-size: 1.5rem;
     text-decoration: none;
     z-index: var(--z-front);
     color: var(--dark-mode);
@@ -329,7 +334,7 @@ section figure p {
 
 .more:hover,
 .more:focus {
-  box-shadow: inset 10em 0 0 0 var(--dark-mode);
+  box-shadow: inset 12em 0 0 0 var(--dark-mode);
 }
 
 .more:hover a {
