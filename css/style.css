@@ -143,7 +143,7 @@ header h3 {
 .activity h4 {
     font-weight: 200;
     letter-spacing: 0.075em;
-    padding-top: 0.5em;
+    padding-top: 0.25em;
 }
 
 /* Mobile burger menu settings and animations */
@@ -323,11 +323,6 @@ header h3 {
     bottom: var(--menu-space);
     right: var(--menu-space);
     z-index: var(--z-fixed);
-}
-
-.message:hover,
-.more-horizontal:hover {
-    fill: var(--light-text);
 }
 
 .message {
@@ -717,9 +712,7 @@ aside {
 /* Media queries */
 /* For a landscape usage with the Iphone 8 and other phones*/
 @media (max-width: 740px) /* and (orientation: landscape) */ {
-    .more-horizontal,
-    .layers,
-    .message,
+    lord-icon,
     h4 {
         display: none;
     }
