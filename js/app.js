@@ -1,6 +1,6 @@
 /* Strong description's text reveal on scroll*/
 var options = {
-    root: document.querySelector('.description'),
+    root: document.querySelector('#smoothscroll'),
     rootMargin: '40vh',
     threshold: 1.0
   }  

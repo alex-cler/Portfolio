@@ -436,12 +436,6 @@ section img {
     /* overflow: hidden; */
 }
 
-/* section img:hover {
-    -ms-transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05);
-} */
-
 section figure p {
     font-size: var(--text-font-size);
     width: 25vw;
