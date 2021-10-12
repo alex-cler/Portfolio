@@ -1,7 +1,35 @@
+/* Strong description's text reveal on scroll*/
+var options = {
+    root: document.querySelector('.description'),
+    rootMargin: '40vh',
+    threshold: 1.0
+  }  
+
+let observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+        /* console.log(entries) */
+        if (entry.intersectionRatio > 0.5) {
+            entry.target.classList.remove('not-visible')
+            observer.unobserve(entry.target)
+        }
+    })
+}, {
+    threshold: [0.5]
+})
+
+let items = document.querySelectorAll('.description span')
+items.forEach(function (item) {
+    item.classList.add('not-visible')
+    observer.observe(item)
+})
+
+/* adding the class "is-active" on click to make the animation */
 document.querySelector('.menu').addEventListener('click', (e) => {
     e.currentTarget.classList.toggle('is-active');
 })
 
+
+/* All this code for doing the animation on the project part */
 /* import * as THREE from 'three';
 import ASScroll from '@ashthornton/asscroll'
 import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls.js';
