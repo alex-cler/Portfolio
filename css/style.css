@@ -574,6 +574,7 @@ footer p {
 .project-1 {
     background: url("../assets/images/Marvel.jpg") no-repeat 50% 50%;
     background-size: cover;
+    filter: saturate(125%);
 }
 
 .project-2 {
@@ -592,8 +593,9 @@ footer p {
 }
 
 .project-5 {
-    background: url("../assets/images/img-five.jpeg") no-repeat 50% 50%;
+    background: url("../assets/images/Camille.jpg") no-repeat 50% 50%;
     background-size: cover;
+    filter: saturate(125%);
 }
 
 /* --- Display project gallery--- */
@@ -690,7 +692,9 @@ aside {
 }
 
 .purpose p,
-.process p{
+.process p,
+/* About page */
+.description-page p{
     font-size: 2rem;
     font-weight: 300;
     margin-top: 1.5em;
@@ -730,6 +734,35 @@ aside {
 .question h2 {
     width: 70vw;
 }
+
+/* About Page */
+.description-page {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 80vw;
+    margin: 10em auto;
+}
+
+.description-page img {
+    float: right;
+    width: 400px;
+    height: auto;
+}
+
+/* Introduction */
+.text-description {
+    display: inline-block;
+    width: 50vw;
+}
+
+.text-description h1 {
+    font-size: clamp(3rem, 1rem + 7vw, 25rem);
+    font-weight: 500;
+    border-bottom: solid var(--light-text) 5px;
+    width: fit-content;
+}
+
 
 /* Media queries */
 /* For a landscape usage with the Iphone 8 and other phones*/
