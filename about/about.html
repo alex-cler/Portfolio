@@ -10,7 +10,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
     <title>Portfolio</title>
     <script src="https://unpkg.com/feather-icons"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <nav>
@@ -71,39 +71,9 @@
         </div>
     </nav>
     <main>
-        <div class="wrapper">
-            <div class="line">
-                <span>Hello, my name is Alex. I’m 21 years old and currently in the second year of my bachelor’s</span>
-            </div>
-            <div class="line">
-                <span> degree in IT. I’m looking for an internship at a company that focuses on web design.</span>
-            </div>
-            <div class="line">
-                <span>I’ve been studying UX/UI Design and FrontEnd at HETIC for the last year, and now I feel</span>
-            </div>
-            <div class="line">
-                <span>ready to take on a challenge in this field of work with a company that offers opportunities</span>
-            </div>
-            <div class="line">
-                <span>for professional growth. I like drawing, programming but most of all I like innovating.</span>
-            </div>
-        </div>
+        
     </main>
     <!-- Icon -->
     <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
-    <script>
-        /* Line animation */
-        const textrev = gsap.timeline();
-
-        textrev.from(".line span", 1.8, {
-            y: 200,
-            ease: "power4.out",
-            delay: 0.5,
-            skewY: 10,
-            stagger: {
-                amount: 0.5,
-            },
-        });
-    </script>
 </body>
 </html>

@@ -649,6 +649,8 @@ footer p {
     font-weight: 300;
 }
 
+
+
 aside {
     display: flex;
     flex-flow: row wrap;
@@ -682,7 +684,6 @@ aside li {
 
 .purpose,
 .process,
-.question,
 aside {
     width: 80vw;
     margin: 7.5em auto;
@@ -694,6 +695,7 @@ aside {
     font-weight: 300;
     margin-top: 1.5em;
     line-height: 1.75em;
+    letter-spacing: 0.05rem;
 }
 
 .purpose h2,
@@ -704,9 +706,29 @@ aside {
     border-bottom: solid var(--light-text) 2px;
 }
 
+.mockup-marvel {
+    background: url('../assets/images/Mockup-Marvel.png');
+    height: 90vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 .question {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--light-mode);
+    color: var(--dark-text);
     font-size: 4rem;
     text-align: center;
+    display: grid;
+    place-items: center;
+}
+
+.question h2 {
+    width: 70vw;
 }
 
 /* Media queries */
