@@ -381,6 +381,30 @@ main img {
     opacity: 0;
 }
 
+.specificity {
+    width: 90vw;
+    margin: 5em auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.specificity > * {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.specificity p {
+    width: 300px;
+    padding: 1.5em 2em 10em 2em;
+}
+
+.specificity h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
 /* ----- Projects part ----- */
 #projects {
     position: relative;
@@ -722,9 +746,6 @@ aside {
 
 .question {
     height: 100vh;
-    width: 100vw;
-    background-color: var(--light-mode);
-    color: var(--dark-text);
     font-size: 4rem;
     text-align: center;
     display: grid;
@@ -737,30 +758,31 @@ aside {
 
 /* About Page */
 .description-page {
+    overflow-y: hidden;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    width: 80vw;
-    margin: 10em auto;
+    width: 90vw;
+    height: 100vh;
+    margin: 5em auto;
 }
 
 .description-page img {
-    float: right;
-    width: 400px;
-    height: auto;
+    width: clamp(300px, 500px ,30vw);
+    height: 80vh;
 }
 
 /* Introduction */
-.text-description {
-    display: inline-block;
-    width: 50vw;
-}
-
 .text-description h1 {
     font-size: clamp(3rem, 1rem + 7vw, 25rem);
     font-weight: 500;
     border-bottom: solid var(--light-text) 5px;
     width: fit-content;
+}
+
+.text-description p {
+    width: clamp(280px, 50vw, 700px);
+    padding: 3em 0;
 }
 
 
