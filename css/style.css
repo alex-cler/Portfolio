@@ -337,13 +337,10 @@ main {
     display: inline;
 }
 
-main img {
-    float: right;
-}
-
 /* --- Subtitle --- */
 .description h2,
-#projects h2:not(figcaption h2) {
+#projects h2:not(figcaption h2),
+#focus h2 {
     font-size: clamp(3rem, 5vw + 1rem, 8rem);
     font-weight: 300;
     text-align: left;
@@ -359,7 +356,7 @@ main img {
 }
 
 /* --- Introduction WHO I AM ? --- */
-.description p{
+.description p {
     font-size: clamp(2rem, 5vw + 1rem, 6rem);
     font-weight: 500;
     color: var(--text-opacity);
@@ -369,7 +366,8 @@ main img {
     line-height: 1.75em;
 }
 
-.description span {
+.description span,
+#focus span {
     color: var(--light-text);
     z-index: var(--z-fixed);
     /* Scroll Reveal Settings */
@@ -379,6 +377,25 @@ main img {
 
 .description span.not-visible {
     opacity: 0;
+}
+
+/* --- What do I focus on ? PART --- */
+#focus h2 {
+    margin-top: 3em;
+}
+
+#focus > p {
+    font-size: clamp(2rem, 4vw + 1rem, 5rem);
+    font-weight: 400;
+    color: var(--text-opacity);
+    width: 90vw;
+    margin: 0 auto;
+    text-align: left;
+    line-height: 1.75em;
+}
+
+#focus > p > span {
+    color: var(--light-text);
 }
 
 .specificity {
@@ -396,7 +413,7 @@ main img {
 
 .specificity p {
     width: 300px;
-    padding: 1.5em 2em 10em 2em;
+    padding: 1.5em 2em 8em 2em;
 }
 
 .specificity h3 {
