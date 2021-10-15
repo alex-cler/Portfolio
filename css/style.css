@@ -612,11 +612,6 @@ footer p {
 }
 
 .project-4 {
-    background: url("../assets/images/NFT.jpg") no-repeat 50% 50%;
-    background-size: cover;
-}
-
-.project-5 {
     background: url("../assets/images/Camille.jpg") no-repeat 50% 50%;
     background-size: cover;
     filter: saturate(125%);
@@ -630,8 +625,7 @@ footer p {
 
 /* --- Display of project's text--- */
 .project-1 h1,
-.project-3 h1,
-.project-5 h1 {
+.project-3 h1 {
     bottom: 0;
     right: -60px;
 }
@@ -644,8 +638,7 @@ footer p {
 /* Description Project */
 #marvel,
 #rodin,
-#photo,
-#nft {
+#photo {
     height: 100vh;
     width: 100vw;
     background-repeat: no-repeat;
@@ -757,19 +750,25 @@ aside {
 }
 
 /* About Page */
+#about-page {
+    overflow: hidden;
+}
+
 .description-page {
-    overflow-y: hidden;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 90vw;
-    height: 100vh;
+    height: 80vh;
     margin: 5em auto;
 }
 
 .description-page img {
-    width: clamp(300px, 500px ,30vw);
-    height: 80vh;
+    width: auto;
+    height: 75vh;
+    /* PhotoShop Editing to do */
+    filter: saturate(110%);
+    filter: contrast(110%);
 }
 
 /* Introduction */
@@ -789,7 +788,7 @@ aside {
 /* Media queries */
 /* For a landscape usage with the Iphone 8 and other phones*/
 @media (max-width: 740px) /* and (orientation: landscape) */ {
-    lord-icon,
+    .activity lord-icon,
     h4 {
         display: none;
     }
