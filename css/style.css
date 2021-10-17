@@ -769,6 +769,8 @@ aside {
 /* About Page */
 #about-page {
     overflow: hidden;
+    display: grid;
+    place-items: center;
 }
 
 .description-page {
@@ -776,31 +778,34 @@ aside {
     flex-flow: row wrap;
     justify-content: space-around;
     width: 90vw;
-    height: 80vh;
+    height: 72.5vh;
     margin: 5em auto;
 }
 
 .description-page img {
     width: auto;
-    height: 75vh;
+    height: 100%;
     /* PhotoShop Editing to do */
     filter: saturate(110%);
     filter: contrast(110%);
 }
 
 /* Introduction */
+.text-description {
+    height: 100%;
+    /* Width setting to let the align-content working */
+    width: clamp(280px, 50vw, 700px);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
 .text-description h1 {
     font-size: clamp(3rem, 1rem + 7vw, 25rem);
     font-weight: 500;
     border-bottom: solid var(--light-text) 5px;
     width: fit-content;
 }
-
-.text-description p {
-    width: clamp(280px, 50vw, 700px);
-    padding: 3em 0;
-}
-
 
 /* Media queries */
 /* For a landscape usage with the Iphone 8 and other phones*/
