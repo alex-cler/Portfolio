@@ -356,14 +356,18 @@ main {
 }
 
 /* --- Introduction WHO I AM ? --- */
-.description p {
+.description p,
+#focus > p {
     font-size: clamp(2rem, 5vw + 1rem, 6rem);
     font-weight: 500;
     color: var(--text-opacity);
     text-align: left;
-    width: 75vw;
     padding: 1.5em 0;
     line-height: 1.75em;
+}
+
+.description p {
+    width: 75vw;
 }
 
 .description span,
@@ -385,13 +389,8 @@ main {
 }
 
 #focus > p {
-    font-size: clamp(2rem, 4vw + 1rem, 5rem);
-    font-weight: 400;
-    color: var(--text-opacity);
     width: 90vw;
     margin: 0 auto;
-    text-align: left;
-    line-height: 1.75em;
 }
 
 #focus > p > span {
