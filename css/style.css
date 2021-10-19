@@ -341,7 +341,7 @@ main {
 .description h2,
 #projects h2:not(figcaption h2),
 #focus h2 {
-    font-size: clamp(3rem, 5vw + 1rem, 8rem);
+    font-size: clamp(2.75rem, 5vw + 1rem, 8rem);
     font-weight: 300;
     text-align: left;
     margin: 0.5em auto; 
@@ -663,17 +663,17 @@ footer p {
 }
 
 #marvel {
-    background: url("../assets/images/Marvel2.svg") no-repeat 100% 100%;
+    background: url("../assets/images/Marvel2.svg");
     background-attachment: fixed;
 }
 
 #rodin {
-    background: url("../assets/images/Rodin-museum.jpg") no-repeat 100% 100%;
+    background: url("../assets/images/Rodin-museum.jpg");
     background-attachment: fixed;
 }
 
 #photo {
-    background: url("../assets/images/Matthieu.jpg") no-repeat 100% 100%;
+    background: url("../assets/images/Matthieu.jpg");
     background-attachment: fixed;
 }
 
@@ -743,14 +743,27 @@ aside {
     border-bottom: solid var(--light-text) 2px;
 }
 
-.mockup-marvel {
-    background: url('../assets/images/Mockup-Marvel.png');
-    height: 90vh;
+.process h3 {
+    font-size: 3rem;
+    font-weight: 500;
+    padding-top: 1.5em;
+}
+
+.mockup-marvel,
+.mockup-photo {
+    height: 100vh;
     width: 100vw;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
+}
+
+.mockup-marvel {
+    background: url('../assets/images/mockup-marvel.png');
+}
+
+.mockup-photo {
+    background: url('../assets/images/mockup-photo.png');
 }
 
 .question {
