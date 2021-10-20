@@ -750,6 +750,7 @@ aside {
 }
 
 .mockup-marvel,
+.mockup-rodin,
 .mockup-photo {
     height: 100vh;
     width: 100vw;
@@ -760,6 +761,10 @@ aside {
 
 .mockup-marvel {
     background: url('../assets/images/mockup-marvel.png');
+}
+
+.mockup-rodin {
+    background: url('../assets/images/rodin-mockup.png');
 }
 
 .mockup-photo {
