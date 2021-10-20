@@ -18,174 +18,183 @@
     <script src="https://unpkg.com/feather-icons"></script>
 </head>
 
-<body>
-    <header>
-        <h1>Welcome to my <span>Portfolio</span></h1>
-        <div class="scroll">
-            <h3>Scroll Down</h3>
-            <!-- SVG Arrow down -->
-            <a href="#smoothscroll">
-                <i class="arrow-down" data-feather="chevrons-down" width="40" height="40" stroke-width="0.5"></i>
-            </a>
-        </div>
-        <nav>
-            <div class="activity">
-                <ul>
-                    <li class="logo">
-                        <a href="#">
-                            <lord-icon src="https://cdn.lordicon.com/tkgyrmwc.json" trigger="hover"
-                                colors="primary:#fffef0,secondary:#fffef0" style="width:50px;height:50px">
-                            </lord-icon>
-                        </a>
-                    </li>
-                    <li class="about">
-                        <a href="about/about.html">
-                            <!-- Icon -->
-                            <lord-icon src="https://cdn.lordicon.com/msqcjuvd.json" trigger="hover"
-                                colors="primary:#fffef0,secondary:#fffef0" style="width: 50px;height: 50px">
-                            </lord-icon>
-                        </a>
-                        <h4>About</h4>
-                    </li>
-                    <li class="projects">
-                        <!-- Burger menu -->
-                        <div class="menu">
-                            <div class="menu__container">
-                                <!-- Middle line -->
-                                <div class="menu__inner"></div>
-                                <!-- Menu on hover -->
-                                <div class="menu__hidden"></div>
+<body data-barba="wrapper">
+    <div class="load-container">
+        <div class="loading-screen"></div>
+    </div>
+    <main data-barba="container" data-barba-namespace="about-section">
+        <header>
+            <h1 class="animate-this">Welcome to my <span>Portfolio</span></h1>
+            <div class="scroll">
+                <h3>Scroll Down</h3>
+                <!-- SVG Arrow down -->
+                <a href="#smoothscroll">
+                    <i class="arrow-down" data-feather="chevrons-down" width="40" height="40" stroke-width="0.5"></i>
+                </a>
+            </div>
+            <nav>
+                <div class="activity">
+                    <ul>
+                        <li class="logo">
+                            <a href="#">
+                                <lord-icon src="https://cdn.lordicon.com/tkgyrmwc.json" trigger="hover"
+                                    colors="primary:#fffef0,secondary:#fffef0" style="width:50px;height:50px">
+                                </lord-icon>
+                            </a>
+                        </li>
+                        <li class="about">
+                            <a href="about/about.html">
+                                <!-- Icon -->
+                                <lord-icon src="https://cdn.lordicon.com/msqcjuvd.json" trigger="hover"
+                                    colors="primary:#fffef0,secondary:#fffef0" style="width: 50px;height: 50px">
+                                </lord-icon>
+                            </a>
+                            <h4>About</h4>
+                        </li>
+                        <li class="projects">
+                            <!-- Burger menu -->
+                            <div class="menu">
+                                <div class="menu__container">
+                                    <!-- Middle line -->
+                                    <div class="menu__inner"></div>
+                                    <!-- Menu on hover -->
+                                    <div class="menu__hidden"></div>
+                                </div>
                             </div>
-                        </div>
-                        <!-- <i class="menu" data-feather="menu" width="32" height="32" stroke-width="0.5"></i> -->
-                        <a href="projects/projects.html">
-                            <!-- Icon -->
-                            <lord-icon src="https://cdn.lordicon.com/buqfvmsj.json" trigger="hover" axis-y="65"
-                                colors="primary:#fffef0,secondary:#fffef0" style="width: 50px;height: 50px">
-                            </lord-icon>
-                        </a>
-                        <h4>Projects</h4>
-                    </li>
-                    <li class="contact">
-                        <a href="#contact">
-                            <!-- Icon -->
-                            <lord-icon src="https://cdn.lordicon.com/xlrvroxq.json" trigger="hover" axis-y="35"
-                                colors="primary:#fffef0,secondary:#df2462" style="width:40px;height:40px">
-                            </lord-icon>
-                        </a>
-                        <h4>Contact</h4>
-                    </li>
-                </ul>
+                            <!-- <i class="menu" data-feather="menu" width="32" height="32" stroke-width="0.5"></i> -->
+                            <a href="projects/projects.html">
+                                <!-- Icon -->
+                                <lord-icon src="https://cdn.lordicon.com/buqfvmsj.json" trigger="hover" axis-y="65"
+                                    colors="primary:#fffef0,secondary:#fffef0" style="width: 50px;height: 50px">
+                                </lord-icon>
+                            </a>
+                            <h4>Projects</h4>
+                        </li>
+                        <li class="contact">
+                            <a href="#contact">
+                                <!-- Icon -->
+                                <lord-icon src="https://cdn.lordicon.com/xlrvroxq.json" trigger="hover" axis-y="35"
+                                    colors="primary:#fffef0,secondary:#df2462" style="width:40px;height:40px">
+                                </lord-icon>
+                            </a>
+                            <h4>Contact</h4>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="description" id="smoothscroll">
+                <h2>Who am I ?</h2>
+                <p>Hello, my name is <span>Alex</span>. I’m 21 years old and currently in the second year of my bachelor’s
+                    degree in IT. I’m looking for an <span>internship</span> at a company that focuses on <span>web
+                        design</span>.
+                    I’ve been studying UX/UI Design and FrontEnd at HETIC for the last year, and now I feel ready to take on
+                    a
+                    <span>challenge</span> in this field of work with a <span>company</span> that offers opportunities for
+                    <span>professional growth</span>. I like drawing, programming but most of all
+                    I like <span>innovating</span>.
+                </p>
             </div>
-        </nav>
-    </header>
-    <main>
-        <div class="description" id="smoothscroll">
-            <h2>Who am I ?</h2>
-            <p>Hello, my name is <span>Alex</span>. I’m 21 years old and currently in the second year of my bachelor’s
-                degree in IT. I’m looking for an <span>internship</span> at a company that focuses on <span>web
-                    design</span>.
-                I’ve been studying UX/UI Design and FrontEnd at HETIC for the last year, and now I feel ready to take on
-                a
-                <span>challenge</span> in this field of work with a <span>company</span> that offers opportunities for
-                <span>professional growth</span>. I like drawing, programming but most of all
-                I like <span>innovating</span>.
-            </p>
-        </div>
-        <!-- <img src="./assets/images/Alex_Picture.png" alt="Picture of my lovely face"> -->
+            <!-- <img src="./assets/images/Alex_Picture.png" alt="Picture of my lovely face"> -->
+        </main>
+        <section id="projects">
+            <h2>Want to see my work ?</h2>
+            <div class="marvel" id="info-project">
+                <figure>
+                    <img src="./assets/images/Marvel.jpg" alt="Marvel background with all heroes">
+                    <figcaption>
+                        <h2>Marvel</h2>
+                    </figcaption>
+                </figure>
+                <div class="description-project">
+                    <p>Data Visualisation Marvel Website for the last study project</p>
+                    <button class="more">
+                        <a href="./projects/marvel.html">Learn more</a>
+                    </button>
+                </div>
+            </div>
+            <div class="rodin" id="info-project">
+                <figure>
+                    <img src="./assets/images/Rodin.jpg" alt="Rodin Museum with the famous Le Penseur">
+                    <figcaption>
+                        <h2>Rodin Museum</h2>
+                    </figcaption>
+                </figure>
+                <div class="description-project">
+                    <p>Reinventing the famous Rodin Museum Homepage website.</p>
+                    <button class="more">
+                        <a href="./projects/rodin.html">Learn more</a>
+                    </button>
+                </div>
+            </div>
+            <div class="photo" id="info-project">
+                <figure>
+                    <img src="./assets/images/Matthieu.jpg" alt="Beautiful picture took by Matthieu Photographe">
+                    <figcaption>
+                        <h2>Photography</h2>
+                    </figcaption>
+                </figure>
+                <div class="description-project">
+                    <p>First Freelance design project for a photographer.</p>
+                    <button class="more">
+                        <a href="./projects/photo.html">Learn more</a>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section id="focus">
+            <h2>What do I focus on?</h2>
+            <p>As a young front end developper, it’s important for me to make things <span>intuitive</span>, <span>adaptive</span> and also
+            <span>attractive</span>. You are going to find some of my projects down below and therefore see some of this priorities
+            in action.</p>
+            <div class="specificity">
+                <div class="adaptive">
+                    <lord-icon src="https://cdn.lordicon.com/xqfngtiz.json" trigger="loop"
+                        colors="primary:#fffef0,secondary:#df2462" stroke="20" style="width:250px;height:250px">
+                    </lord-icon>
+                    <h3>Adaptive</h3>
+                    <p>Be able to see website on any devices is a must-have.</p>
+                </div>
+                <div class="attractive">
+                    <lord-icon src="https://cdn.lordicon.com/yjmqwtbi.json" trigger="loop"
+                        colors="primary:#fffef0,secondary:#df2462" stroke="20" style="width:250px;height:250px">
+                    </lord-icon>
+                    <h3>Attractive</h3>
+                    <p>Be original is the key to make attractive website</p>
+                </div>
+                <div class="intuitive">
+                    <lord-icon src="https://cdn.lordicon.com/qjaernlj.json" trigger="loop"
+                        colors="primary:#fffef0,secondary:#df2462" stroke="20" style="width:250px;height:250px">
+                    </lord-icon>
+                    <h3>Intuitive</h3>
+                    <p>Work on the UX/UI Design for an easy and intuitive experience.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="circle">
+                <h2>Like my work or have any questions <a href="mailto:alex28.cler@gmail.com?subject=How can I help you ?">let's get in touch<a></h2>
+            </div>
+        </section>
+        <footer>
+            <div class="social">
+                <li><a class="instagram" href="https://www.instagram.com/alexandre_cler/">Instagram</a></li>
+                <li><a class="linkedin" href="https://www.linkedin.com/in/alexandre-cler/">Linkedin</a></li>
+                <li><a class="github" href="https://github.com/alex-cler">Github</a></li>
+                <li><a class="behance" href="https://www.behance.net/alexandrecler">Behance</a></li>
+            </div>
+            <p>Created by myself 🤍 in 2021 ©</p>
+        </footer>
     </main>
-    <section id="projects">
-        <h2>Want to see my work ?</h2>
-        <div class="marvel" id="info-project">
-            <figure>
-                <img src="./assets/images/Marvel.jpg" alt="Marvel background with all heroes">
-                <figcaption>
-                    <h2>Marvel</h2>
-                </figcaption>
-            </figure>
-            <div class="description-project">
-                <p>Data Visualisation Marvel Website for the last study project</p>
-                <button class="more">
-                    <a href="./projects/marvel.html">Learn more</a>
-                </button>
-            </div>
-        </div>
-        <div class="rodin" id="info-project">
-            <figure>
-                <img src="./assets/images/Rodin.jpg" alt="Rodin Museum with the famous Le Penseur">
-                <figcaption>
-                    <h2>Rodin Museum</h2>
-                </figcaption>
-            </figure>
-            <div class="description-project">
-                <p>Reinventing the famous Rodin Museum Homepage website.</p>
-                <button class="more">
-                    <a href="./projects/rodin.html">Learn more</a>
-                </button>
-            </div>
-        </div>
-        <div class="photo" id="info-project">
-            <figure>
-                <img src="./assets/images/Matthieu.jpg" alt="Beautiful picture took by Matthieu Photographe">
-                <figcaption>
-                    <h2>Photography</h2>
-                </figcaption>
-            </figure>
-            <div class="description-project">
-                <p>First Freelance design project for a photographer.</p>
-                <button class="more">
-                    <a href="./projects/photo.html">Learn more</a>
-                </button>
-            </div>
-        </div>
-    </section>
-    <section id="focus">
-        <h2>What do I focus on?</h2>
-        <p>As a young front end developper, it’s important for me to make things <span>intuitive</span>, <span>adaptive</span> and also
-        <span>attractive</span>. You are going to find some of my projects down below and therefore see some of this priorities
-        in action.</p>
-        <div class="specificity">
-            <div class="adaptive">
-                <lord-icon src="https://cdn.lordicon.com/xqfngtiz.json" trigger="loop"
-                    colors="primary:#fffef0,secondary:#df2462" stroke="20" style="width:250px;height:250px">
-                </lord-icon>
-                <h3>Adaptive</h3>
-                <p>Be able to see website on any devices is a must-have.</p>
-            </div>
-            <div class="attractive">
-                <lord-icon src="https://cdn.lordicon.com/yjmqwtbi.json" trigger="loop"
-                    colors="primary:#fffef0,secondary:#df2462" stroke="20" style="width:250px;height:250px">
-                </lord-icon>
-                <h3>Attractive</h3>
-                <p>Be original is the key to make attractive website</p>
-            </div>
-            <div class="intuitive">
-                <lord-icon src="https://cdn.lordicon.com/qjaernlj.json" trigger="loop"
-                    colors="primary:#fffef0,secondary:#df2462" stroke="20" style="width:250px;height:250px">
-                </lord-icon>
-                <h3>Intuitive</h3>
-                <p>Work on the UX/UI Design for an easy and intuitive experience.</p>
-            </div>
-        </div>
-    </section>
-    <section id="contact">
-        <div class="circle">
-            <h2>Like my work or have any questions <a href="mailto:alex28.cler@gmail.com?subject=How can I help you ?">let's get in touch<a></h2>
-        </div>
-    </section>
-    <footer>
-        <div class="social">
-            <li><a class="instagram" href="https://www.instagram.com/alexandre_cler/">Instagram</a></li>
-            <li><a class="linkedin" href="https://www.linkedin.com/in/alexandre-cler/">Linkedin</a></li>
-            <li><a class="github" href="https://github.com/alex-cler">Github</a></li>
-            <li><a class="behance" href="https://www.behance.net/alexandrecler">Behance</a></li>
-        </div>
-        <p>Created by myself 🤍 in 2021 ©</p>
-    </footer>
     <!-- Icon -->
     <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
     <script>feather.replace()</script>
     <script src="./js/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+    <script src="./js/main.js"></script>
     <script>
         $(document).ready(function () {
             // Add smooth scrolling to all links

@@ -14,75 +14,84 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<body id="about-page">
-    <nav>
-        <div class="activity">
-            <ul>
-                <!-- <li class="logo">
-                    <a href="#"><img src="" alt="Personnal Logo"></a>
-                </li> -->
-                <li class="about">
-                    <a href="../about/about.html">
-                        <!-- Icon -->
-                        <lord-icon src="https://cdn.lordicon.com/msqcjuvd.json" trigger="hover"
-                            colors="primary:#fffef0,secondary:#fffef0" style="width: 50px;height: 50px">
-                        </lord-icon>
-                    </a>
-                    <h4>About</h4>
-                </li>
-                <li class="projects">
-                    <!-- Burger menu -->
-                    <div class="menu">
-                        <div class="menu__container">
-                            <!-- Middle line -->
-                            <div class="menu__inner"></div>
-                            <!-- Menu on hover -->
-                            <div class="menu__hidden"></div>
+<body data-barba="wrapper" id="about-page">
+    <div class="load-container">
+        <div class="loading-screen"></div>
+    </div>
+    <main data-barba="container" data-barba-namespace="about-section">
+        <nav>
+            <div class="activity">
+                <ul>
+                    <!-- <li class="logo">
+                        <a href="#"><img src="" alt="Personnal Logo"></a>
+                    </li> -->
+                    <li class="about">
+                        <a href="../about/about.html">
+                            <!-- Icon -->
+                            <lord-icon src="https://cdn.lordicon.com/msqcjuvd.json" trigger="hover"
+                                colors="primary:#fffef0,secondary:#fffef0" style="width: 50px;height: 50px">
+                            </lord-icon>
+                        </a>
+                        <h4>About</h4>
+                    </li>
+                    <li class="projects">
+                        <!-- Burger menu -->
+                        <div class="menu">
+                            <div class="menu__container">
+                                <!-- Middle line -->
+                                <div class="menu__inner"></div>
+                                <!-- Menu on hover -->
+                                <div class="menu__hidden"></div>
+                            </div>
                         </div>
-                    </div>
-                    <!-- <i class="menu" data-feather="menu" width="32" height="32" stroke-width="0.5"></i> -->
-                    <a href="../projects/projects.html">
-                        <!-- Icon -->
-                        <lord-icon src="https://cdn.lordicon.com/buqfvmsj.json" trigger="hover" axis-y="65"
-                            colors="primary:#fffef0,secondary:#fffef0" style="width: 50px;height: 50px">
-                        </lord-icon>
-                    </a>
-                    <h4>Projects</h4>
-                </li>
-                <li class="contact">
-                    <a href="mailto:alex28.cler@gmail.com?subject=How can I help you ?">
-                        <!-- Icon -->
-                        <lord-icon src="https://cdn.lordicon.com/xlrvroxq.json" trigger="hover" axis-y="35"
-                            colors="primary:#fffef0,secondary:#df2462" style="width:40px;height:40px">
-                        </lord-icon>
-                    </a>
-                    <h4>Contact</h4>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <main class="description-page">
-        <div class="text-description">
-            <h1>About me</h1>
-            <p>My name is Alex, I'm 21 years old and I'm a FrontEnd developper, UI/UX Designer looking for an internship
-            on one of these domains. I like drawing, sport (Tennis and Fitness), reading (mainly self-improvement books), 
-            meditating and especially programming. I've been starting to use GSAP and React.js for a months now, 
-            to make delightful animations and then bring websites to life. If you're interested to see some of 
-            them click the button down below </p>
-            <button class="more"><a href="../projects/projects.html">See my work</a></button>
-        </div>
-        <img src="../assets/images/Homephoto.jpg" alt="Picture of myself">
+                        <!-- <i class="menu" data-feather="menu" width="32" height="32" stroke-width="0.5"></i> -->
+                        <a href="../projects/projects.html">
+                            <!-- Icon -->
+                            <lord-icon src="https://cdn.lordicon.com/buqfvmsj.json" trigger="hover" axis-y="65"
+                                colors="primary:#fffef0,secondary:#fffef0" style="width: 50px;height: 50px">
+                            </lord-icon>
+                        </a>
+                        <h4>Projects</h4>
+                    </li>
+                    <li class="contact">
+                        <a href="mailto:alex28.cler@gmail.com?subject=How can I help you ?">
+                            <!-- Icon -->
+                            <lord-icon src="https://cdn.lordicon.com/xlrvroxq.json" trigger="hover" axis-y="35"
+                                colors="primary:#fffef0,secondary:#df2462" style="width:40px;height:40px">
+                            </lord-icon>
+                        </a>
+                        <h4>Contact</h4>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <main class="description-page">
+            <div class="text-description">
+                <h1 class="animate-this">About me</h1>
+                <p class="animate-this">My name is Alex, I'm 21 years old and I'm a FrontEnd developper, UI/UX Designer looking for an internship
+                on one of these domains. I like drawing, sport (Tennis and Fitness), reading (mainly self-improvement books), 
+                meditating and especially programming. I've been starting to use GSAP and React.js for a months now, 
+                to make delightful animations and then bring websites to life. If you're interested to see some of 
+                them click the button down below </p>
+                <button class="more animate-this"><a href="../projects/projects.html">See my work</a></button>
+            </div>
+            <img src="../assets/images/Homephoto.jpg" alt="Picture of myself">
+        </main>
+        <footer>
+            <div class="social">
+                <li><a class="instagram" href="https://www.instagram.com/alexandre_cler/">Instagram</a></li>
+                <li><a class="linkedin" href="https://www.linkedin.com/in/alexandre-cler/">Linkedin</a></li>
+                <li><a class="github" href="https://github.com/alex-cler">Github</a></li>
+                <li><a class="behance" href="https://www.behance.net/alexandrecler">Behance</a></li>
+            </div>
+        </footer>
     </main>
-    <footer>
-        <div class="social">
-            <li><a class="instagram" href="https://www.instagram.com/alexandre_cler/">Instagram</a></li>
-            <li><a class="linkedin" href="https://www.linkedin.com/in/alexandre-cler/">Linkedin</a></li>
-            <li><a class="github" href="https://github.com/alex-cler">Github</a></li>
-            <li><a class="behance" href="https://www.behance.net/alexandrecler">Behance</a></li>
-        </div>
-    </footer>
     <!-- Icon -->
     <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 
 </html>

@@ -47,7 +47,6 @@ a {
 /* Custom cursor */
 
 html {
-    scroll-behavior: smooth;
     /* I use 62.5% to set 1rem to 10px */
     font-size: 62.5%;
     font-family: var(--body-font);
@@ -822,6 +821,28 @@ aside {
     font-weight: 500;
     border-bottom: solid var(--light-text) 5px;
     width: fit-content;
+}
+
+/* Transition page wrapper */
+.load-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    /* overflow: hidden; */
+    z-index: 10;
+    pointer-events: none;
+}
+
+.loading-screen {
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    background-color: var(--light-mode);
+    width: 0%;
+    height: 100%;
 }
 
 /* Media queries */
