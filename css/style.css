@@ -653,12 +653,14 @@ footer p {
 /* Description Project */
 #marvel,
 #rodin,
-#photo {
+#photo,
+#model {
     height: 100vh;
     width: 100vw;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 #marvel {
@@ -676,9 +678,14 @@ footer p {
     background-attachment: fixed;
 }
 
+#model {
+    background: url("../assets/images/Camille.jpg");
+}
+
 #marvel p,
 #rodin p,
-#photo p {
+#photo p,
+#model p {
     font-size: 2.5em;
     font-weight: 300;
 }

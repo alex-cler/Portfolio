@@ -11,14 +11,14 @@ function delay(n) {
 function pageTransition() {
     var tl = gsap.timeline();
     tl.to(".loading-screen", {
-        duration: 1.2,
+        duration: 1,
         width: "100%",
         left: "0%",
         ease: "Expo.easeInOut",
     });
 
     tl.to(".loading-screen", {
-        duration: 1,
+        duration: 0.8,
         width: "100%",
         left: "100%",
         ease: "Expo.easeInOut",
@@ -29,7 +29,7 @@ function pageTransition() {
 
 function contentAnimation() {
     var tl = gsap.timeline();
-    tl.from(".animate-this", { duration: 1, y: 30, opacity: 0, stagger: 0.4, delay: 0.2 });
+    tl.from(".animate-this", { duration: 1, y: 30, opacity: 0, stagger: 0.4, delay: 0.1 });
 }
 
 $(function () {
