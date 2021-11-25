@@ -68,7 +68,7 @@ header h1 {
 header span {
     background: -webkit-linear-gradient(225deg, var(--red-gradient) 0%, var(--blue-gradient) 100%);
     background-clip: text;
-    -webkit-background-clip: text;
+    -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent;
 }
 
@@ -849,7 +849,7 @@ aside {
     padding-top: 0;
     background-color: var(--light-mode);
     width: 0%;
-    height: 100%;
+    height: 100vh;
 }
 
 /* Media queries */
